@@ -88,6 +88,33 @@ d3.csv("data/Accounts.csv", function (data) {
         .group(ndGroup)
         .formatNumber(cur)
         .valueAccessor(function (d) { return d });
+        
+//******************************************************************************
+    $("#show").click(function () {
+        $("#table").toggle();
+    })
 
+    var dateDimension = ndx.dimension(dc.pluck('date'));
+    var dataTable = dc.dataTable("#table")
+        .width(1150)
+        .height(300)
+        .dimension(dateDimension)
+        .group(function (d) { return ""; })
+        .showGroups(false)
+        .size(data.length)
+        .columns([
+            {
+                label: "Date",
+                format: function (d) { return new Date(d.date).getDate() + "/" + (+(new Date(d.date).getMonth()) + 1 ) + "/" + new Date(d.date).getFullYear() ; }
+            },
+            'day',
+            'week',
+            'month',
+            'name',
+            'payment',
+            'amount'])
+        .sortBy(function(d){return +d.date})
+        .order(d3.ascending);
+// *****************************************************************************
     dc.renderAll();
 });
