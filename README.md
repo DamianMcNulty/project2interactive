@@ -41,12 +41,13 @@
 ## Questions
 1. What is the average expense amount for each account?
 2. How many transactions are there for each account?
-3. What is the totol expense amount for each account?
+3. What is the total expense amount for each account?
 
 ## Research
 1. https://www.w3schools.com/bootstrap/bootstrap_tabs_pills.asp
 2. https://www.w3schools.com/bootstrap/bootstrap_collapse.asp
 3. https://codepen.io/DamianMcNulty/pen/BqyZQq
+4. https://github.com/dc-js/dc.js/issues/731#issuecomment-59599016
 
 ## Technologies Used
 [(Back to top)](#table-of-contents)

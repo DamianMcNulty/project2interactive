@@ -1,0 +1,8 @@
+#per-account-chart .x.axis text {
+    text-anchor: end !important;
+    transform: rotate(-45deg);
+}
+
+.Chart__border {
+    border: 1px solid black;
+}

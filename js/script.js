@@ -59,6 +59,12 @@ d3.csv("data/Accounts.csv", function (data) {
         }
         return transactions;
     }
+    
+    var w = $(window).width()*.50;
+    var h = $(window).height()*.33;
+    if($(window).width() < 450){
+        w = $(window).width();
+    }
 
     data1 = getTransactions(data);
     var ndx = crossfilter(data1);
@@ -115,6 +121,53 @@ d3.csv("data/Accounts.csv", function (data) {
             'amount'])
         .sortBy(function(d){return +d.date})
         .order(d3.ascending);
+// *****************************************************************************
+    
+// *****************************************************************************
+    var name_dim = ndx.dimension(dc.pluck('name'));
+    
+    var total_per_account = name_dim.group().reduce(
+        function(p, v) {
+            ++p.count;
+            p.total += v.amount;
+            return p;
+        },
+        function(p, v) {
+            --p.count;
+            p.total -= v.amount;
+            return p;
+        },
+        function() {
+            return {
+                count: 0,
+                total: 0
+            };
+        }
+    );
+    print_filter('total_per_account');
+    
+    dc.barChart('#per-account-chart')
+        .width(w)
+        .height(h)
+        .margins({ top: 10, right: 50, bottom: 50, left: 50 })
+        .dimension(name_dim)
+        .group(total_per_account)
+        .transitionDuration(1000)
+        .x(d3.scale.ordinal())
+        .colorAccessor(function (d) { return d.key })
+        .valueAccessor(function (p) {
+            return p.value.total;
+        })
+        .colors(d3.scale.category20b())
+        .xUnits(dc.units.ordinal)
+        .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value.total + 0.00001) * 100) / 100 + '\nCount: ' + d.value.count + '\nAverage: \u20ac' + Math.round((d.value.total / d.value.count + 0.00001) * 100) / 100; })
+        .xAxisLabel("Account")
+        .yAxisLabel("Amount (Euros)")
+        .yAxis().ticks(5)
+        .tickFormat(function (d) {
+            return "\u20ac" + d;
+        });
+
 // *****************************************************************************
     dc.renderAll();
 });
