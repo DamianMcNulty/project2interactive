@@ -13,6 +13,8 @@ Date.prototype.getWeek = function () {
 }
 var data1 = [];
 
+var pie = dc.pieChart("#piechart");
+
 d3.csv("data/Accounts.csv", function (data) {
     function print_filter(filter) {
         var f = eval(filter);
@@ -60,8 +62,8 @@ d3.csv("data/Accounts.csv", function (data) {
         return transactions;
     }
     
-    var w = $(window).width()*.50;
-    var h = $(window).height()*.33;
+    var w = $(window).width()*.49;
+    var h = $(window).height()*.28;
     if($(window).width() < 450){
         w = $(window).width();
     }
@@ -70,6 +72,7 @@ d3.csv("data/Accounts.csv", function (data) {
     var ndx = crossfilter(data1);
     
     var all = ndx.groupAll();
+    var sumTotalExpenses = all.reduceSum(function (d) { return d.amount; }).value();
     var ndGroup = all.reduceSum(function (d) { return d.amount });
 
        //Source: https://stackoverflow.com/questions/34744243/d3-js-format-as-currency-euro
@@ -189,7 +192,109 @@ d3.csv("data/Accounts.csv", function (data) {
         .tickFormat(function (d) {
             return "\u20ac" + d;
         });
+        
+// *****************************************************************************
 
+// *****************************************************************************
+
+    var quarter_dim = ndx.dimension(dc.pluck('quarter'));
+    var quarterGroup = quarter_dim.group().reduceSum(dc.pluck('amount'));
+    // print_filter('quarterGroup');
+
+    var month_dim = ndx.dimension(dc.pluck('month'));
+    var monthGroup = month_dim.group().reduceSum(dc.pluck('amount'));
+
+    var week_dim = ndx.dimension(dc.pluck('week'));
+    var weekGroup = week_dim.group().reduceSum(dc.pluck('amount'));
+
+    var daily_dim = ndx.dimension(dc.pluck('day'));
+    var dailyGroup = daily_dim.group().reduceSum(dc.pluck('amount'));
+
+    pie
+        .width(w)
+        .height(h)
+        .radius(w)
+        .dimension(quarter_dim)
+        .group(quarterGroup)
+        .transitionDuration(500)
+        .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100; })
+        .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
+        .colors(d3.scale.category20())
+        .legend(dc.legend().x(0).y(0).itemHeight(12).gap(5));
+
+    function changeEventHandler(event) {
+        // console.log(this.value);
+        var key = this.value;
+        switch (key) {
+            case 'quarterly':
+                // console.log("hello quarterly");
+                pie
+                    .width(w)
+                    .height(h)
+                    .radius(w)
+                    .dimension(quarter_dim)
+                    .group(quarterGroup)
+                    .transitionDuration(500)
+                    .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100; })
+                    .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
+                    .colors(d3.scale.category20())
+                    .legend(dc.legend().x(0).y(0).itemHeight(12).gap(5));
+                dc.redrawAll();
+
+                break;
+            case "monthly":
+                pie
+                    .width(w)
+                    .height(h)
+                    .radius(w)
+                    .dimension(month_dim)
+                    .group(monthGroup)
+                    .transitionDuration(500)
+                    .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100; })
+                    .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
+                    .colors(d3.scale.category20())
+                    .legend(dc.legend().x(0).y(0).itemHeight(12).gap(5));
+                // console.log("hello monthly");
+                dc.redrawAll();
+
+                break;
+            case "weekly":
+                pie
+                    .width(w)
+                    .height(h)
+                    .radius(w)
+                    .dimension(week_dim)
+                    .group(weekGroup)
+                    .transitionDuration(500)
+                    .title(function (d) { return 'Wk ' + d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100; })
+                    .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
+                    .colors(d3.scale.category20())
+                    .legend(dc.legend().x(0).y(0).itemHeight(12).gap(5));
+                dc.redrawAll();
+
+                break;
+            default:
+                pie
+                    .width(w)
+                    .height(h)
+                    .radius(w)
+                    .dimension(daily_dim)
+                    .group(dailyGroup)
+                    .transitionDuration(500)
+                    .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100; })
+                    .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
+                    .colors(d3.scale.category20())
+                    .legend(dc.legend().x(0).y(0).itemHeight(12).gap(5));
+                dc.redrawAll();
+
+                break;
+        }
+    }
+
+    d3.selectAll(".pie")
+        .on("change", changeEventHandler);
+
+// *****************************************************************************
     
     dc.renderAll();
 });
