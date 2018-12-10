@@ -197,6 +197,24 @@ d3.csv("data/Accounts.csv", function (data) {
 
 // *****************************************************************************
 
+    var payment = ndx.dimension(dc.pluck('payment'));
+    var paymentGroup = payment.group().reduceSum(dc.pluck('amount'));
+
+    dc.pieChart('#cash-bank')
+        .width(w)
+        .height(h)
+        .radius(w)
+        .dimension(payment)
+        .group(paymentGroup)
+        .transitionDuration(500)
+        .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100; })
+        .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
+        .colors(d3.scale.category20());
+
+// *****************************************************************************
+
+// *****************************************************************************
+
     var quarter_dim = ndx.dimension(dc.pluck('quarter'));
     var quarterGroup = quarter_dim.group().reduceSum(dc.pluck('amount'));
     // print_filter('quarterGroup');
