@@ -62,7 +62,7 @@ d3.csv("data/Accounts.csv", function (data) {
         return transactions;
     }
     
-    var w = $(window).width()*.49;
+    var w = $(window).width()*.48;
     var h = $(window).height()*.28;
     if($(window).width() < 450){
         w = $(window).width();
@@ -209,33 +209,34 @@ d3.csv("data/Accounts.csv", function (data) {
 
     var daily_dim = ndx.dimension(dc.pluck('day'));
     var dailyGroup = daily_dim.group().reduceSum(dc.pluck('amount'));
-
+    
+    
+    var h1 = $(window).height()*.65;
+    
     pie
         .width(w)
-        .height(h)
+        .height(h1)
         .radius(w)
         .dimension(quarter_dim)
         .group(quarterGroup)
         .transitionDuration(500)
-        .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100; })
+        .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100 + '\nPercentage: ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
         .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
         .colors(d3.scale.category20())
         .legend(dc.legend().x(0).y(0).itemHeight(12).gap(5));
 
     function changeEventHandler(event) {
-        // console.log(this.value);
         var key = this.value;
         switch (key) {
             case 'quarterly':
-                // console.log("hello quarterly");
                 pie
                     .width(w)
-                    .height(h)
+                    .height(h1)
                     .radius(w)
                     .dimension(quarter_dim)
                     .group(quarterGroup)
                     .transitionDuration(500)
-                    .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100; })
+                    .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100 + '\nPercentage: ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
                     .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
                     .colors(d3.scale.category20())
                     .legend(dc.legend().x(0).y(0).itemHeight(12).gap(5));
@@ -245,29 +246,28 @@ d3.csv("data/Accounts.csv", function (data) {
             case "monthly":
                 pie
                     .width(w)
-                    .height(h)
+                    .height(h1)
                     .radius(w)
                     .dimension(month_dim)
                     .group(monthGroup)
                     .transitionDuration(500)
-                    .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100; })
-                    .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
+                    .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100 + '\nPercentage: ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
+                    .label(function (d) { return Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
                     .colors(d3.scale.category20())
                     .legend(dc.legend().x(0).y(0).itemHeight(12).gap(5));
-                // console.log("hello monthly");
                 dc.redrawAll();
 
                 break;
             case "weekly":
                 pie
                     .width(w)
-                    .height(h)
+                    .height(h1)
                     .radius(w)
                     .dimension(week_dim)
                     .group(weekGroup)
                     .transitionDuration(500)
-                    .title(function (d) { return 'Wk ' + d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100; })
-                    .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
+                    .title(function (d) { return 'Wk ' + d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100 + '\nPercentage: ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
+                    .label(function (d) { return Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
                     .colors(d3.scale.category20())
                     .legend(dc.legend().x(0).y(0).itemHeight(12).gap(5));
                 dc.redrawAll();
@@ -276,13 +276,13 @@ d3.csv("data/Accounts.csv", function (data) {
             default:
                 pie
                     .width(w)
-                    .height(h)
+                    .height(h1)
                     .radius(w)
                     .dimension(daily_dim)
                     .group(dailyGroup)
                     .transitionDuration(500)
-                    .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100; })
-                    .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
+                    .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100 + '\nPercentage: ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
+                    .label(function (d) { return Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
                     .colors(d3.scale.category20())
                     .legend(dc.legend().x(0).y(0).itemHeight(12).gap(5));
                 dc.redrawAll();
