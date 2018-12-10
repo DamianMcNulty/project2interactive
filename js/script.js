@@ -144,12 +144,12 @@ d3.csv("data/Accounts.csv", function (data) {
             };
         }
     );
-    print_filter('total_per_account');
+    // print_filter('total_per_account');
     
     dc.barChart('#per-account-chart')
         .width(w)
         .height(h)
-        .margins({ top: 10, right: 50, bottom: 50, left: 50 })
+        .margins({ top: 10, right: 5, bottom: 50, left: 35 })
         .dimension(name_dim)
         .group(total_per_account)
         .transitionDuration(1000)
@@ -169,5 +169,27 @@ d3.csv("data/Accounts.csv", function (data) {
         });
 
 // *****************************************************************************
+
+// *****************************************************************************
+
+    var date_dim = ndx.dimension(dc.pluck('date'));
+    var total_expense_per_day = date_dim.group().reduceSum(dc.pluck('amount'));
+    
+    dc.lineChart('#by-date-day-line')
+        .width(w)
+        .height(h)
+        .margins({ top: 10, right: 5, bottom: 50, left: 35 })
+        .dimension(date_dim)
+        .group(total_expense_per_day)
+        .x(d3.time.scale().domain([new Date(2019, 0, 1), new Date(2019, 11, 31)]).range([0, w]))
+        .xAxisLabel("Date")
+        .brushOn(false)
+        .yAxisLabel("Amount (Euros)")
+        .yAxis().ticks(5)
+        .tickFormat(function (d) {
+            return "\u20ac" + d;
+        });
+
+    
     dc.renderAll();
 });

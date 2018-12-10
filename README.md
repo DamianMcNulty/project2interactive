@@ -48,6 +48,7 @@
 2. https://www.w3schools.com/bootstrap/bootstrap_collapse.asp
 3. https://codepen.io/DamianMcNulty/pen/BqyZQq
 4. https://github.com/dc-js/dc.js/issues/731#issuecomment-59599016
+5. https://www.cssmatic.com/box-shadow
 
 ## Technologies Used
 [(Back to top)](#table-of-contents)
