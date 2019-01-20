@@ -14,7 +14,8 @@
 -   [UX](#ux)
 -   [Technologies Used](#technologies-used)
 -   [Local Testing](#local-tesing)
--   [Deployment](#deployment)
+-   [Build](#build)
+-   [Deploy](#deploy)
 -   [Credits](#credits)
     -   [Content](#content)
     -   [Media](#media)
@@ -73,12 +74,19 @@
 
 6.  [DC](https://dc-js.github.io/dc.js/)
 
-## Deployment
+## Build
 
 [(Back to top)](#table-of-contents)
 
-1.  git tag -a v1.0.0 -m "version 1.0.0"
-2.  sh ./publish.sh 1.0.0
+    npm i
+    npm run build
+
+## Deploy
+
+[(Back to top)](#table-of-contents)
+
+    git tag -a v1.0.0 -m "version 1.0.0"
+    sh ./publish.sh 1.0.0
 
 ## Credits
 
