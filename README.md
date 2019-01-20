@@ -84,6 +84,7 @@
 [(Back to top)](#table-of-contents)
 
 - <https://fractures.space/> <a href="https://twitter.com/pyx">Krisztian Puska</a>
+- <https://www.linkedin.com/learning/dc-js-for-data-science-essential-training> <a href="http://vizdata.co.uk/">Emma Saunders</a>
 
 ## License
 
