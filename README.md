@@ -77,7 +77,8 @@
 
 [(Back to top)](#table-of-contents)
 
-* Hosting on a Github repo master branch
+1.  git tag -a v1.0.0 -m "version 1.0.0"
+2.  sh ./publish.sh 1.0.0
 
 ## Credits
 
@@ -85,6 +86,7 @@
 
 - <https://fractures.space/> <a href="https://twitter.com/pyx">Krisztian Puska</a>
 - <https://www.linkedin.com/learning/dc-js-for-data-science-essential-training> <a href="http://vizdata.co.uk/">Emma Saunders</a>
+-   [ToolBox](https://frontend.github.io/toolbox/)
 
 ## License
 
