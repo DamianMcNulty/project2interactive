@@ -61,7 +61,7 @@
 
 [(Back to top)](#table-of-contents)
 
-1   [HTML5](https://en.wikipedia.org/wiki/HTML5) 
+1.  [HTML5](https://en.wikipedia.org/wiki/HTML5) 
 
 2.  [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)  
 
@@ -77,13 +77,13 @@
 
 [(Back to top)](#table-of-contents)
 
-    Hosting on a Github repo master branch
+* Hosting on a Github repo master branch
 
 ## Credits
 
 [(Back to top)](#table-of-contents)
 
-1.  <https://fractures.space/> <a href="https://twitter.com/pyx">Krisztian Puska</a>
+- <https://fractures.space/> <a href="https://twitter.com/pyx">Krisztian Puska</a>
 
 ## License
 
