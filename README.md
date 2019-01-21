@@ -11,15 +11,21 @@
 ## Table of Contents
 
 -   [Description](#description)
+
 -   [UX](#ux)
+
 -   [Technologies Used](#technologies-used)
--   [Local Testing](#local-tesing)
+
 -   [Build](#build)
+
 -   [Deploy](#deploy)
+
 -   [Credits](#credits)
+
     -   [Content](#content)
     -   [Media](#media)
     -   [Acknowledgements](#acknowledgements)
+
 -   [LICENSE](#license)
 
 ## Description
@@ -64,7 +70,7 @@
 
 1.  [HTML5](https://en.wikipedia.org/wiki/HTML5) 
 
-2.  [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)  
+2.  [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
 3.  [Git](https://git-scm.com/)  
 
@@ -92,8 +98,8 @@
 
 [(Back to top)](#table-of-contents)
 
-- <https://fractures.space/> <a href="https://twitter.com/pyx">Krisztian Puska</a>
-- <https://www.linkedin.com/learning/dc-js-for-data-science-essential-training> <a href="http://vizdata.co.uk/">Emma Saunders</a>
+-   <https://fractures.space/> <a href="https://twitter.com/pyx">Krisztian Puska</a>
+-   <https://www.linkedin.com/learning/dc-js-for-data-science-essential-training> <a href="http://vizdata.co.uk/">Emma Saunders</a>
 -   [ToolBox](https://frontend.github.io/toolbox/)
 
 ## License
