@@ -8,9 +8,8 @@ Date.prototype.getWeek = function () {
     // January 4 is always in week 1.
     var week1 = new Date(date.getFullYear(), 0, 4);
     // Adjust to Thursday in week 1 and count number of weeks from date to week1.
-    return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000
-        - 3 + (week1.getDay() + 6) % 7) / 7);
-}
+    return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7);
+};
 var data1 = [];
 
 var pie = dc.pieChart("#piechart");
@@ -43,7 +42,7 @@ d3.csv("data/Accounts.csv", function (data) {
             } else {
                 a.payment = 'bank';
             }
-            month = new Date(a.date).getMonth()
+            month = new Date(a.date).getMonth();
             if (month <= 2) {
                 a.quarter = 'Q1';
             } else if (month > 2 && month <= 5) {
@@ -62,8 +61,8 @@ d3.csv("data/Accounts.csv", function (data) {
         return transactions;
     }
 
-    var w = $(window).width() * .48;
-    var h = $(window).height() * .28;
+    var w = $(window).width() * 0.48;
+    var h = $(window).height() * 0.28;
     if ($(window).width() < 450) {
         w = $(window).width();
     }
@@ -73,7 +72,7 @@ d3.csv("data/Accounts.csv", function (data) {
 
     var all = ndx.groupAll();
     var sumTotalExpenses = all.reduceSum(function (d) { return d.amount; }).value();
-    var ndGroup = all.reduceSum(function (d) { return d.amount });
+    var ndGroup = all.reduceSum(function (d) { return d.amount; });
 
     //Source: https://stackoverflow.com/questions/34744243/d3-js-format-as-currency-euro
     var IE = d3.locale({
@@ -89,19 +88,19 @@ d3.csv("data/Accounts.csv", function (data) {
         "shortDays": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
         "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         "shortMonths": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-    })
+    });
 
     var cur = IE.numberFormat("$,.2f");
 
     dc.numberDisplay("#total-amount-display")
         .group(ndGroup)
         .formatNumber(cur)
-        .valueAccessor(function (d) { return d });
+        .valueAccessor(function (d) { return d; });
 
     //******************************************************************************
     $("#show").click(function () {
         $("#table").toggle();
-    })
+    });
 
     var dateDimension = ndx.dimension(dc.pluck('date'));
     var dataTable = dc.dataTable("#table")
@@ -122,7 +121,7 @@ d3.csv("data/Accounts.csv", function (data) {
             'name',
             'payment',
             'amount'])
-        .sortBy(function (d) { return +d.date })
+        .sortBy(function (d) { return +d.date; })
         .order(d3.ascending);
     // *****************************************************************************
 
@@ -157,7 +156,7 @@ d3.csv("data/Accounts.csv", function (data) {
         .group(total_per_account)
         .transitionDuration(1000)
         .x(d3.scale.ordinal())
-        .colorAccessor(function (d) { return d.key })
+        .colorAccessor(function (d) { return d.key; })
         .valueAccessor(function (p) {
             return p.value.total;
         })
@@ -229,7 +228,7 @@ d3.csv("data/Accounts.csv", function (data) {
     var dailyGroup = daily_dim.group().reduceSum(dc.pluck('amount'));
 
 
-    var h1 = $(window).height() * .65;
+    var h1 = $(window).height() * 0.65;
 
     pie
         .width(w)
