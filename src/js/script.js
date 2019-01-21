@@ -61,21 +61,21 @@ d3.csv("data/Accounts.csv", function (data) {
         }
         return transactions;
     }
-    
-    var w = $(window).width()*.48;
-    var h = $(window).height()*.28;
-    if($(window).width() < 450){
+
+    var w = $(window).width() * .48;
+    var h = $(window).height() * .28;
+    if ($(window).width() < 450) {
         w = $(window).width();
     }
 
     data1 = getTransactions(data);
     var ndx = crossfilter(data1);
-    
+
     var all = ndx.groupAll();
     var sumTotalExpenses = all.reduceSum(function (d) { return d.amount; }).value();
     var ndGroup = all.reduceSum(function (d) { return d.amount });
 
-       //Source: https://stackoverflow.com/questions/34744243/d3-js-format-as-currency-euro
+    //Source: https://stackoverflow.com/questions/34744243/d3-js-format-as-currency-euro
     var IE = d3.locale({
         "decimal": ".",
         "thousands": ",",
@@ -90,15 +90,15 @@ d3.csv("data/Accounts.csv", function (data) {
         "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         "shortMonths": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     })
-    
+
     var cur = IE.numberFormat("$,.2f");
-    
+
     dc.numberDisplay("#total-amount-display")
         .group(ndGroup)
         .formatNumber(cur)
         .valueAccessor(function (d) { return d });
-        
-//******************************************************************************
+
+    //******************************************************************************
     $("#show").click(function () {
         $("#table").toggle();
     })
@@ -114,7 +114,7 @@ d3.csv("data/Accounts.csv", function (data) {
         .columns([
             {
                 label: "Date",
-                format: function (d) { return new Date(d.date).getDate() + "/" + (+(new Date(d.date).getMonth()) + 1 ) + "/" + new Date(d.date).getFullYear() ; }
+                format: function (d) { return new Date(d.date).getDate() + "/" + (+(new Date(d.date).getMonth()) + 1) + "/" + new Date(d.date).getFullYear(); }
             },
             'day',
             'week',
@@ -122,25 +122,25 @@ d3.csv("data/Accounts.csv", function (data) {
             'name',
             'payment',
             'amount'])
-        .sortBy(function(d){return +d.date})
+        .sortBy(function (d) { return +d.date })
         .order(d3.ascending);
-// *****************************************************************************
-    
-// *****************************************************************************
+    // *****************************************************************************
+
+    // *****************************************************************************
     var name_dim = ndx.dimension(dc.pluck('name'));
-    
+
     var total_per_account = name_dim.group().reduce(
-        function(p, v) {
+        function (p, v) {
             ++p.count;
             p.total += v.amount;
             return p;
         },
-        function(p, v) {
+        function (p, v) {
             --p.count;
             p.total -= v.amount;
             return p;
         },
-        function() {
+        function () {
             return {
                 count: 0,
                 total: 0
@@ -148,7 +148,7 @@ d3.csv("data/Accounts.csv", function (data) {
         }
     );
     // print_filter('total_per_account');
-    
+
     dc.barChart('#per-account-chart')
         .width(w)
         .height(h)
@@ -171,13 +171,13 @@ d3.csv("data/Accounts.csv", function (data) {
             return "\u20ac" + d;
         });
 
-// *****************************************************************************
+    // *****************************************************************************
 
-// *****************************************************************************
+    // *****************************************************************************
 
     var date_dim = ndx.dimension(dc.pluck('date'));
     var total_expense_per_day = date_dim.group().reduceSum(dc.pluck('amount'));
-    
+
     dc.lineChart('#by-date-day-line')
         .width(w)
         .height(h)
@@ -192,10 +192,10 @@ d3.csv("data/Accounts.csv", function (data) {
         .tickFormat(function (d) {
             return "\u20ac" + d;
         });
-        
-// *****************************************************************************
 
-// *****************************************************************************
+    // *****************************************************************************
+
+    // *****************************************************************************
 
     var payment = ndx.dimension(dc.pluck('payment'));
     var paymentGroup = payment.group().reduceSum(dc.pluck('amount'));
@@ -211,9 +211,9 @@ d3.csv("data/Accounts.csv", function (data) {
         .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
         .colors(d3.scale.category20());
 
-// *****************************************************************************
+    // *****************************************************************************
 
-// *****************************************************************************
+    // *****************************************************************************
 
     var quarter_dim = ndx.dimension(dc.pluck('quarter'));
     var quarterGroup = quarter_dim.group().reduceSum(dc.pluck('amount'));
@@ -227,10 +227,10 @@ d3.csv("data/Accounts.csv", function (data) {
 
     var daily_dim = ndx.dimension(dc.pluck('day'));
     var dailyGroup = daily_dim.group().reduceSum(dc.pluck('amount'));
-    
-    
-    var h1 = $(window).height()*.65;
-    
+
+
+    var h1 = $(window).height() * .65;
+
     pie
         .width(w)
         .height(h1)
@@ -312,7 +312,7 @@ d3.csv("data/Accounts.csv", function (data) {
     d3.selectAll(".pie")
         .on("change", changeEventHandler);
 
-// *****************************************************************************
-    
+    // *****************************************************************************
+
     dc.renderAll();
 });

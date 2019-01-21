@@ -33,6 +33,7 @@
     "gulp-twig": "^1.2.0",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
+    "jshint": "^2.9.7",
     "postcss-flexibility": "^2.0.0",
     "require-dir": "^1.0.0"
   }
