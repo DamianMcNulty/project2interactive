@@ -11,7 +11,8 @@
     "start": "http-server -p 3000 build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "test": "start-test start http-get://localhost:3000 cy:run",
+    "serve": "browser-sync start --server --files \"./**/*\" --port 3000 --build",
+    "test": "start-test serve http-get://localhost:3000 cy:run",
     "test_open": "start-test start http-get://localhost:3000 cy:open"
   },
   "repository": {
@@ -27,6 +28,7 @@
   "homepage": "https://github.com/DamianMcNulty/project2interactive#readme",
   "devDependencies": {
     "autoprefixer": "^8.1.0",
+    "browser-sync": "^2.26.3",
     "cssnano": "^3.10.0",
     "cypress": "^3.1.5",
     "del": "^3.0.0",
