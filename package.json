@@ -7,7 +7,7 @@
     "buildandwatch": "gulp buildandwatch",
     "build": "gulp build",
     "deploy": "gulp build",
-    "predeploy": "CI=1 npm i cypress; npm run test",
+    "predeploy": "CI=1 npm i cypress; npm run build; npm run test",
     "start": "http-server -p 3000 build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
