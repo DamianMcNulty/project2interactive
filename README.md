@@ -3,6 +3,7 @@
 <a href="https://github.com/DamianMcNulty/project2interactive/stargazers">
     <img src="https://img.shields.io/github/stars/DamianMcNulty/project2interactive.svg?style=social" alt="GitHub stars">
 </a>
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5eb7f523-5395-4be6-8aed-a8f4e1827973/deploy-status)](https://app.netlify.com/sites/project2interactive/deploys)
 
 ## Goal
