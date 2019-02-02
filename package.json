@@ -11,7 +11,7 @@
     "start": "http-server -p 3000 build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "serve": "browser-sync start --server --files \".build/**/*\" --port 3000 --directory",
+    "serve": "browser-sync start --server --files \"./build/**/*\" --port 3000 --directory",
     "test": "start-server-and-test serve http-get://localhost:3000 cy:run",
     "test_open": "start-test start http-get://localhost:3000 cy:open"
   },
