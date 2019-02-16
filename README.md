@@ -20,13 +20,11 @@
 
 -   [Build](#build)
 
+-   [Cross Browser Testing](#cross-browser-testing)
+
 -   [Deploy](#deploy)
 
 -   [Credits](#credits)
-
-    -   [Content](#content)
-    -   [Media](#media)
-    -   [Acknowledgements](#acknowledgements)
 
 -   [LICENSE](#license)
 
@@ -82,12 +80,20 @@
 
 6.  [DC](https://dc-js.github.io/dc.js/)
 
+6.  [Cross Browser Testing](https://crossbrowsertesting.com/)
+
 ## Build
 
 [(Back to top)](#table-of-contents)
 
     npm i
     npm run build
+
+## Cross Browser Testing
+
+[(Back to top)](#table-of-contents)
+
+see cbt folder
 
 ## Deploy
 
