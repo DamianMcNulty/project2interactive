@@ -1,5 +1,6 @@
 {
   "baseUrl": "http://localhost:3000/",
   "viewportWidth": 800,
-  "viewportHeight": 780
+  "viewportHeight": 780,
+  "projectId": "wmwzz6"
 }

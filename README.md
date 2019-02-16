@@ -18,7 +18,9 @@
 
 -   [Technologies Used](#technologies-used)
 
--   [Build](#build)
+-   [Local Development](#local-development)
+
+-   [Local Testing](#local-testing)
 
 -   [Cross Browser Testing](#cross-browser-testing)
 
@@ -56,14 +58,6 @@
 4.  What is the total expense amount for each account?
 5.  How many accounts are there?
 
-## Research
-
-1.  <https://www.w3schools.com/bootstrap/bootstrap_tabs_pills.asp>
-2.  <https://www.w3schools.com/bootstrap/bootstrap_collapse.asp>
-3.  <https://codepen.io/DamianMcNulty/pen/BqyZQq>
-4.  <https://github.com/dc-js/dc.js/issues/731#issuecomment-59599016>
-5.  <https://www.cssmatic.com/box-shadow>
-
 ## Technologies Used
 
 [(Back to top)](#table-of-contents)
@@ -80,14 +74,34 @@
 
 6.  [DC](https://dc-js.github.io/dc.js/)
 
-6.  [Cross Browser Testing](https://crossbrowsertesting.com/)
+7.  [Cross Browser Testing](https://crossbrowsertesting.com/)
 
-## Build
+8.  [Node v10.15.1](https://nodejs.org/)
+
+9.  [NPM 6.4.1](https://www.npmjs.com/)
+
+10. [Cypress.io](https://www.cypress.io/)
+
+11. [HTML5 Validator](https://validator.w3.org/)
+
+12. [CSS3 Validator](https://jigsaw.w3.org/css-validator/)
+
+## Local Development
 
 [(Back to top)](#table-of-contents)
 
+    git clone https://github.com/DamianMcNulty/project2interactive.git
     npm i
     npm run build
+    open http://127.0.0.1:5500/build/index.html with live-server in vscode
+
+## Local testing
+
+[(Back to top)](#table-of-contents)
+
+    (in separate terminals)
+    npm run buildandwatch
+    npm run test_open
 
 ## Cross Browser Testing
 
@@ -95,12 +109,30 @@
 
 see cbt folder
 
-## Deploy
+## CI
+
+[(Back to top)](#table-of-contents)
+
+    git push
+
+note: Integration tests are carried out using Cypress and Netlify. A staging server is deployed to https://project2interactive.netlify.com/ .
+
+## Production
 
 [(Back to top)](#table-of-contents)
 
     git tag -a v1.0.0 -m "version 1.0.0"
+
+    (in git bash terminal)
     sh ./publish.sh 1.0.0
+
+## Research
+
+1.  <https://www.w3schools.com/bootstrap/bootstrap_tabs_pills.asp>
+2.  <https://www.w3schools.com/bootstrap/bootstrap_collapse.asp>
+3.  <https://codepen.io/DamianMcNulty/pen/BqyZQq>
+4.  <https://github.com/dc-js/dc.js/issues/731#issuecomment-59599016>
+5.  <https://www.cssmatic.com/box-shadow>
 
 ## Credits
 
