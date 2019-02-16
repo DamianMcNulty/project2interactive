@@ -117,6 +117,10 @@ see cbt folder
 
 note: Integration tests are carried out using Cypress and Netlify. A staging server is deployed to https://project2interactive.netlify.com/ .
 
+### Cypress Testing CI Recording
+
+<img src="https://github.com/DamianMcNulty/project2interactive/blob/master/cypress/videos/cypressvideo.gif" width=60% height=350px alt="Cypress Recording">
+
 ## Production
 
 [(Back to top)](#table-of-contents)
