@@ -86,6 +86,8 @@
 
 12. [CSS3 Validator](https://jigsaw.w3.org/css-validator/)
 
+13. [Online Converter](https://www.onlineconverter.com/mp4-to-gif)
+
 ## Local Development
 
 [(Back to top)](#table-of-contents)
@@ -115,7 +117,7 @@ see cbt folder
 
     git push
 
-note: Integration tests are carried out using Cypress and Netlify. A staging server is deployed to https://project2interactive.netlify.com/ .
+note: Integration tests are carried out using Cypress and Netlify. A staging server is deployed to <https://project2interactive.netlify.com/> .
 
 ### Cypress Testing CI Recording
 
