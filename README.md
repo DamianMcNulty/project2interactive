@@ -132,6 +132,8 @@ note: Integration tests are carried out using Cypress and Netlify. A staging ser
     (in git bash terminal)
     sh ./publish.sh 1.0.0
 
+The production version is hosted at <https://damianmcnulty.github.io/project2interactive>
+
 ## Research
 
 1.  <https://www.w3schools.com/bootstrap/bootstrap_tabs_pills.asp>
