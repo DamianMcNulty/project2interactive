@@ -27,7 +27,7 @@ gulp.task('scripts', function(){
 	.pipe(order(['*jquery.min.js*']))
 	.pipe(concat('script.js'))
 	.pipe(gulp.dest('build/js'))
-	.pipe(uglify())
+	// .pipe(uglify())
 	.pipe(rename({ extname: '.min.js' }))
 	.pipe(gulp.dest('build/js'));
 });
