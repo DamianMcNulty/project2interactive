@@ -20,7 +20,7 @@ mongo = PyMongo(app)
 
 @app.route('/data')
 def data():
-    return json.loads(dumps(list(mongo.db.accounts.find())))
+    return dumps(list(mongo.db.accounts.find()))
 
 @app.route('/')
 def index():
