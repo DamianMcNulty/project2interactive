@@ -9,9 +9,9 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
-# app.secret_key = environ.get('SECRET_KEY')
-# app.config["MONGO_DBNAME"] = environ.get('MONGO_DBNAME')
-# app.config["MONGO_URI"] = environ.get('MONGO_URI')
+app.secret_key = environ.get('SECRET_KEY')
+app.config["MONGO_DBNAME"] = environ.get('MONGO_DBNAME')
+app.config["MONGO_URI"] = environ.get('MONGO_URI')
 
 mongo = PyMongo(app)
 
