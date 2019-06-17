@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <title>Expense Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}" />
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/dc.css" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/dc.css')}}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fractures.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/fractures.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
 </head>
 
