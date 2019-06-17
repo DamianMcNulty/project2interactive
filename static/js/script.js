@@ -14,7 +14,7 @@ var data1 = [];
 
 var pie = dc.pieChart("#piechart");
 
-d3.csv("data/Accounts.csv", function (data) {
+d3.json("/data", function (data) {
     function print_filter(filter) {
         var f = eval(filter);
         if (typeof (f.length) != "undefined") { } else { }

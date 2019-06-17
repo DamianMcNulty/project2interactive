@@ -2,7 +2,7 @@ from os import environ
 from datetime import datetime
 import math
 
-from flask import Flask, render_template, redirect, request, url_for
+from flask import Flask, render_template, redirect, request, url_for, jsonify
 
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
@@ -16,9 +16,9 @@ app.config["MONGO_URI"] = environ.get('MONGO_URI')
 mongo = PyMongo(app)
 
 
-@app.route('/hello')
-def hello():
-    return "Hello, World!"
+@app.route('/data')
+def data():
+    return json.loads(dumps(list(mongo.db.accounts.find())))
 
 @app.route('/')
 def index():
