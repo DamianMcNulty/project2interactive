@@ -7,6 +7,7 @@ from flask import Flask, render_template, redirect, request, url_for, jsonify
 
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+from bson.json_util import dumps
 
 app = Flask(__name__)
 
