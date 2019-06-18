@@ -37,7 +37,7 @@ d3.json("/data", function (data) {
             a.amount = +data[j]['Amount Num.'];
             a.id = +data[j]['id'];
             var payments = ['Cash', 'Bank'];
-            if (data[j]['Cash'] == 'true') {
+            if (data[j]['Cash'] == true) {
                 a.payment = 'cash';
             } else {
                 a.payment = 'bank';
