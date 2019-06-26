@@ -4,6 +4,8 @@
     <img src="https://img.shields.io/github/stars/DamianMcNulty/project2interactive.svg?style=social" alt="GitHub stars">
 </a>
 
+[![Build Status](https://travis-ci.org/DamianMcNulty/project2interactive.svg?branch=master)](https://travis-ci.org/DamianMcNulty/project2interactive)
+
 ## Goal
 
 > Create a Data Dashboard visualising a dataset using D3.js and DC.js
