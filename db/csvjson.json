@@ -1,0 +1,1857 @@
+db.groceries.insertMany([
+  {
+    "Date": "01/04/2019",
+    "id": 1,
+    "Account Name": "Crab - Meat Combo",
+    "Amount Num.": 45.18,
+    "Cash": false
+  },
+  {
+    "Date": "06/09/2019",
+    "id": 2,
+    "Account Name": "Chocolate - Compound Coating",
+    "Amount Num.": 21.47,
+    "Cash": true
+  },
+  {
+    "Date": "06/09/2019",
+    "id": 3,
+    "Account Name": "Oranges",
+    "Amount Num.": 5.52,
+    "Cash": true
+  },
+  {
+    "Date": "05/04/2019",
+    "id": 4,
+    "Account Name": "Piping Jelly - All Colours",
+    "Amount Num.": 13.12,
+    "Cash": true
+  },
+  {
+    "Date": "24/11/2019",
+    "id": 5,
+    "Account Name": "Madeira",
+    "Amount Num.": 7.26,
+    "Cash": false
+  },
+  {
+    "Date": "13/06/2019",
+    "id": 6,
+    "Account Name": "Steel Wool S.o.s",
+    "Amount Num.": 29.02,
+    "Cash": false
+  },
+  {
+    "Date": "05/05/2019",
+    "id": 7,
+    "Account Name": "Leeks - Large",
+    "Amount Num.": 41,
+    "Cash": true
+  },
+  {
+    "Date": "18/12/2019",
+    "id": 8,
+    "Account Name": "Star Fruit",
+    "Amount Num.": 18.04,
+    "Cash": false
+  },
+  {
+    "Date": "12/07/2019",
+    "id": 9,
+    "Account Name": "Chef Hat 20cm",
+    "Amount Num.": 19.37,
+    "Cash": true
+  },
+  {
+    "Date": "21/02/2019",
+    "id": 10,
+    "Account Name": "Nut - Macadamia",
+    "Amount Num.": 16.42,
+    "Cash": false
+  },
+  {
+    "Date": "25/08/2019",
+    "id": 11,
+    "Account Name": "Trueblue - Blueberry",
+    "Amount Num.": 22.25,
+    "Cash": true
+  },
+  {
+    "Date": "28/02/2019",
+    "id": 12,
+    "Account Name": "Jam - Raspberry",
+    "Amount Num.": 46.74,
+    "Cash": true
+  },
+  {
+    "Date": "19/02/2019",
+    "id": 13,
+    "Account Name": "Tray - Foam, Square 4 - S",
+    "Amount Num.": 27.8,
+    "Cash": false
+  },
+  {
+    "Date": "19/01/2019",
+    "id": 14,
+    "Account Name": "Wine - Valpolicella Masi",
+    "Amount Num.": 36.13,
+    "Cash": false
+  },
+  {
+    "Date": "08/05/2019",
+    "id": 15,
+    "Account Name": "Food Colouring - Red",
+    "Amount Num.": 14.28,
+    "Cash": true
+  },
+  {
+    "Date": "08/04/2019",
+    "id": 16,
+    "Account Name": "Crab - Claws, 26 - 30",
+    "Amount Num.": 15.99,
+    "Cash": false
+  },
+  {
+    "Date": "17/10/2019",
+    "id": 17,
+    "Account Name": "Seedlings - Clamshell",
+    "Amount Num.": 38.98,
+    "Cash": false
+  },
+  {
+    "Date": "06/02/2019",
+    "id": 18,
+    "Account Name": "Lobster - Baby, Boiled",
+    "Amount Num.": 5.49,
+    "Cash": false
+  },
+  {
+    "Date": "30/09/2019",
+    "id": 19,
+    "Account Name": "Mushroom - Morels, Dry",
+    "Amount Num.": 5.23,
+    "Cash": false
+  },
+  {
+    "Date": "10/09/2019",
+    "id": 20,
+    "Account Name": "Pork - Back Ribs",
+    "Amount Num.": 49.51,
+    "Cash": true
+  },
+  {
+    "Date": "04/02/2019",
+    "id": 21,
+    "Account Name": "Island Oasis - Wildberry",
+    "Amount Num.": 39.9,
+    "Cash": true
+  },
+  {
+    "Date": "17/01/2019",
+    "id": 22,
+    "Account Name": "Bread Crumbs - Panko",
+    "Amount Num.": 9.46,
+    "Cash": false
+  },
+  {
+    "Date": "16/11/2019",
+    "id": 23,
+    "Account Name": "Wine - Vidal Icewine Magnotta",
+    "Amount Num.": 30.64,
+    "Cash": false
+  },
+  {
+    "Date": "27/04/2019",
+    "id": 24,
+    "Account Name": "Bagelers - Cinn / Brown",
+    "Amount Num.": 38.1,
+    "Cash": true
+  },
+  {
+    "Date": "16/07/2019",
+    "id": 25,
+    "Account Name": "Jack Daniels",
+    "Amount Num.": 9.57,
+    "Cash": true
+  },
+  {
+    "Date": "16/03/2019",
+    "id": 26,
+    "Account Name": "Sweet Pea Sprouts",
+    "Amount Num.": 39.88,
+    "Cash": true
+  },
+  {
+    "Date": "24/08/2019",
+    "id": 27,
+    "Account Name": "Bacardi Breezer - Tropical",
+    "Amount Num.": 19.11,
+    "Cash": false
+  },
+  {
+    "Date": "13/10/2019",
+    "id": 28,
+    "Account Name": "Soup - Campbells Chicken",
+    "Amount Num.": 43.87,
+    "Cash": false
+  },
+  {
+    "Date": "03/03/2019",
+    "id": 29,
+    "Account Name": "Spice - Pepper Portions",
+    "Amount Num.": 8.34,
+    "Cash": true
+  },
+  {
+    "Date": "12/09/2019",
+    "id": 30,
+    "Account Name": "Wine - Balbach Riverside",
+    "Amount Num.": 0.67,
+    "Cash": false
+  },
+  {
+    "Date": "14/04/2019",
+    "id": 31,
+    "Account Name": "Pork Salted Bellies",
+    "Amount Num.": 2.13,
+    "Cash": true
+  },
+  {
+    "Date": "21/01/2019",
+    "id": 32,
+    "Account Name": "Bagel - Everything Presliced",
+    "Amount Num.": 42.24,
+    "Cash": true
+  },
+  {
+    "Date": "23/06/2019",
+    "id": 33,
+    "Account Name": "Snapple - Iced Tea Peach",
+    "Amount Num.": 29.12,
+    "Cash": true
+  },
+  {
+    "Date": "08/03/2019",
+    "id": 34,
+    "Account Name": "Compound - Mocha",
+    "Amount Num.": 38.13,
+    "Cash": true
+  },
+  {
+    "Date": "22/03/2019",
+    "id": 35,
+    "Account Name": "Raspberries - Frozen",
+    "Amount Num.": 34.07,
+    "Cash": false
+  },
+  {
+    "Date": "16/04/2019",
+    "id": 36,
+    "Account Name": "Tortillas - Flour, 8",
+    "Amount Num.": 20.88,
+    "Cash": false
+  },
+  {
+    "Date": "25/11/2019",
+    "id": 37,
+    "Account Name": "Stock - Fish",
+    "Amount Num.": 35.58,
+    "Cash": true
+  },
+  {
+    "Date": "18/11/2019",
+    "id": 38,
+    "Account Name": "Eggplant - Asian",
+    "Amount Num.": 43.51,
+    "Cash": true
+  },
+  {
+    "Date": "24/12/2019",
+    "id": 39,
+    "Account Name": "Star Fruit",
+    "Amount Num.": 46.51,
+    "Cash": true
+  },
+  {
+    "Date": "29/05/2019",
+    "id": 40,
+    "Account Name": "Carrots - Purple, Organic",
+    "Amount Num.": 24.85,
+    "Cash": true
+  },
+  {
+    "Date": "09/03/2019",
+    "id": 41,
+    "Account Name": "Cod - Black Whole Fillet",
+    "Amount Num.": 14.86,
+    "Cash": false
+  },
+  {
+    "Date": "14/10/2019",
+    "id": 42,
+    "Account Name": "Liners - Banana, Paper",
+    "Amount Num.": 35.39,
+    "Cash": true
+  },
+  {
+    "Date": "05/03/2019",
+    "id": 43,
+    "Account Name": "Oil - Olive Bertolli",
+    "Amount Num.": 28.6,
+    "Cash": false
+  },
+  {
+    "Date": "02/11/2019",
+    "id": 44,
+    "Account Name": "Pernod",
+    "Amount Num.": 29.74,
+    "Cash": false
+  },
+  {
+    "Date": "08/02/2019",
+    "id": 45,
+    "Account Name": "Breadfruit",
+    "Amount Num.": 46.35,
+    "Cash": false
+  },
+  {
+    "Date": "14/02/2019",
+    "id": 46,
+    "Account Name": "Paper Cocktail Umberlla 80 - 180",
+    "Amount Num.": 42.52,
+    "Cash": false
+  },
+  {
+    "Date": "12/11/2019",
+    "id": 47,
+    "Account Name": "Juice - V8 Splash",
+    "Amount Num.": 24.24,
+    "Cash": false
+  },
+  {
+    "Date": "27/09/2019",
+    "id": 48,
+    "Account Name": "Lamb Rack - Ontario",
+    "Amount Num.": 22.3,
+    "Cash": true
+  },
+  {
+    "Date": "30/05/2019",
+    "id": 49,
+    "Account Name": "Tomatoes - Orange",
+    "Amount Num.": 16.54,
+    "Cash": true
+  },
+  {
+    "Date": "14/08/2019",
+    "id": 50,
+    "Account Name": "Black Currants",
+    "Amount Num.": 34.13,
+    "Cash": false
+  },
+  {
+    "Date": "18/10/2019",
+    "id": 51,
+    "Account Name": "Dooleys Toffee",
+    "Amount Num.": 29.51,
+    "Cash": true
+  },
+  {
+    "Date": "02/01/2019",
+    "id": 52,
+    "Account Name": "Wine - Valpolicella Masi",
+    "Amount Num.": 45.65,
+    "Cash": true
+  },
+  {
+    "Date": "30/07/2019",
+    "id": 53,
+    "Account Name": "Wine - Red Oakridge Merlot",
+    "Amount Num.": 27.02,
+    "Cash": true
+  },
+  {
+    "Date": "14/01/2019",
+    "id": 54,
+    "Account Name": "Wine - Red, Antinori Santa",
+    "Amount Num.": 49.92,
+    "Cash": true
+  },
+  {
+    "Date": "15/10/2019",
+    "id": 55,
+    "Account Name": "Steampan - Foil",
+    "Amount Num.": 33.63,
+    "Cash": true
+  },
+  {
+    "Date": "12/02/2019",
+    "id": 56,
+    "Account Name": "Bok Choy - Baby",
+    "Amount Num.": 39.57,
+    "Cash": false
+  },
+  {
+    "Date": "28/12/2019",
+    "id": 57,
+    "Account Name": "Galliano",
+    "Amount Num.": 17.24,
+    "Cash": true
+  },
+  {
+    "Date": "07/11/2019",
+    "id": 58,
+    "Account Name": "Dry Ice",
+    "Amount Num.": 27.66,
+    "Cash": true
+  },
+  {
+    "Date": "04/05/2019",
+    "id": 59,
+    "Account Name": "Ham Black Forest",
+    "Amount Num.": 34.01,
+    "Cash": true
+  },
+  {
+    "Date": "26/08/2019",
+    "id": 60,
+    "Account Name": "Table Cloth 62x114 White",
+    "Amount Num.": 38.44,
+    "Cash": false
+  },
+  {
+    "Date": "05/04/2019",
+    "id": 61,
+    "Account Name": "Lamb Leg - Bone - In Nz",
+    "Amount Num.": 26.68,
+    "Cash": false
+  },
+  {
+    "Date": "05/04/2019",
+    "id": 62,
+    "Account Name": "Pork - Kidney",
+    "Amount Num.": 44.36,
+    "Cash": false
+  },
+  {
+    "Date": "02/10/2019",
+    "id": 63,
+    "Account Name": "Red Snapper - Fillet, Skin On",
+    "Amount Num.": 16.84,
+    "Cash": false
+  },
+  {
+    "Date": "14/03/2019",
+    "id": 64,
+    "Account Name": "Kiwi Gold Zespri",
+    "Amount Num.": 36.95,
+    "Cash": true
+  },
+  {
+    "Date": "28/11/2019",
+    "id": 65,
+    "Account Name": "Potato - Sweet",
+    "Amount Num.": 49.72,
+    "Cash": true
+  },
+  {
+    "Date": "01/04/2019",
+    "id": 66,
+    "Account Name": "Appetizer - Cheese Bites",
+    "Amount Num.": 48.08,
+    "Cash": false
+  },
+  {
+    "Date": "02/09/2019",
+    "id": 67,
+    "Account Name": "Roe - Lump Fish, Black",
+    "Amount Num.": 33.67,
+    "Cash": true
+  },
+  {
+    "Date": "27/09/2019",
+    "id": 68,
+    "Account Name": "Ice Cream - Super Sandwich",
+    "Amount Num.": 2.23,
+    "Cash": true
+  },
+  {
+    "Date": "27/04/2019",
+    "id": 69,
+    "Account Name": "Lamb - Racks, Frenched",
+    "Amount Num.": 38.29,
+    "Cash": true
+  },
+  {
+    "Date": "18/10/2019",
+    "id": 70,
+    "Account Name": "Dish Towel",
+    "Amount Num.": 30.98,
+    "Cash": false
+  },
+  {
+    "Date": "12/04/2019",
+    "id": 71,
+    "Account Name": "Muffin - Bran Ind Wrpd",
+    "Amount Num.": 49.07,
+    "Cash": true
+  },
+  {
+    "Date": "27/02/2019",
+    "id": 72,
+    "Account Name": "Soup Campbells Beef With Veg",
+    "Amount Num.": 48.38,
+    "Cash": true
+  },
+  {
+    "Date": "17/02/2019",
+    "id": 73,
+    "Account Name": "Wine - White, Ej",
+    "Amount Num.": 9.52,
+    "Cash": true
+  },
+  {
+    "Date": "04/06/2019",
+    "id": 74,
+    "Account Name": "Egg Patty Fried",
+    "Amount Num.": 41.7,
+    "Cash": false
+  },
+  {
+    "Date": "09/01/2019",
+    "id": 75,
+    "Account Name": "Potatoes - Peeled",
+    "Amount Num.": 22.73,
+    "Cash": false
+  },
+  {
+    "Date": "30/08/2019",
+    "id": 76,
+    "Account Name": "Soup - Boston Clam Chowder",
+    "Amount Num.": 20.83,
+    "Cash": true
+  },
+  {
+    "Date": "09/08/2019",
+    "id": 77,
+    "Account Name": "Broom Handle",
+    "Amount Num.": 14.92,
+    "Cash": false
+  },
+  {
+    "Date": "05/12/2019",
+    "id": 78,
+    "Account Name": "Paste - Black Olive",
+    "Amount Num.": 20.36,
+    "Cash": false
+  },
+  {
+    "Date": "06/02/2019",
+    "id": 79,
+    "Account Name": "Turkey - Breast, Double",
+    "Amount Num.": 2.23,
+    "Cash": true
+  },
+  {
+    "Date": "17/10/2019",
+    "id": 80,
+    "Account Name": "Energy Drink Bawls",
+    "Amount Num.": 30.86,
+    "Cash": true
+  },
+  {
+    "Date": "01/06/2019",
+    "id": 81,
+    "Account Name": "Pork Loin Bine - In Frenched",
+    "Amount Num.": 28.06,
+    "Cash": false
+  },
+  {
+    "Date": "02/01/2019",
+    "id": 82,
+    "Account Name": "Cleaner - Pine Sol",
+    "Amount Num.": 17.7,
+    "Cash": true
+  },
+  {
+    "Date": "15/11/2019",
+    "id": 83,
+    "Account Name": "Lettuce - Sea / Sea Asparagus",
+    "Amount Num.": 16.63,
+    "Cash": false
+  },
+  {
+    "Date": "13/08/2019",
+    "id": 84,
+    "Account Name": "Milk - 2% 250 Ml",
+    "Amount Num.": 41.93,
+    "Cash": true
+  },
+  {
+    "Date": "08/01/2019",
+    "id": 85,
+    "Account Name": "Gatorade - Lemon Lime",
+    "Amount Num.": 24.26,
+    "Cash": true
+  },
+  {
+    "Date": "08/07/2019",
+    "id": 86,
+    "Account Name": "Oven Mitts - 15 Inch",
+    "Amount Num.": 42.04,
+    "Cash": true
+  },
+  {
+    "Date": "01/05/2019",
+    "id": 87,
+    "Account Name": "Table Cloth 54x72 Colour",
+    "Amount Num.": 22.65,
+    "Cash": false
+  },
+  {
+    "Date": "24/04/2019",
+    "id": 88,
+    "Account Name": "Wine - Magnotta, White",
+    "Amount Num.": 14.92,
+    "Cash": false
+  },
+  {
+    "Date": "26/02/2019",
+    "id": 89,
+    "Account Name": "Cheese - Pied De Vents",
+    "Amount Num.": 22.85,
+    "Cash": true
+  },
+  {
+    "Date": "31/10/2019",
+    "id": 90,
+    "Account Name": "Appetiser - Bought",
+    "Amount Num.": 3.17,
+    "Cash": false
+  },
+  {
+    "Date": "30/03/2019",
+    "id": 91,
+    "Account Name": "Garlic - Elephant",
+    "Amount Num.": 12.26,
+    "Cash": false
+  },
+  {
+    "Date": "08/02/2019",
+    "id": 92,
+    "Account Name": "Tea - Herbal Sweet Dreams",
+    "Amount Num.": 47.19,
+    "Cash": false
+  },
+  {
+    "Date": "02/11/2019",
+    "id": 93,
+    "Account Name": "Sauce - Soya, Dark",
+    "Amount Num.": 6.27,
+    "Cash": true
+  },
+  {
+    "Date": "25/06/2019",
+    "id": 94,
+    "Account Name": "Veal - Insides Provini",
+    "Amount Num.": 18.48,
+    "Cash": true
+  },
+  {
+    "Date": "06/11/2019",
+    "id": 95,
+    "Account Name": "Salmon - Fillets",
+    "Amount Num.": 4.85,
+    "Cash": false
+  },
+  {
+    "Date": "16/06/2019",
+    "id": 96,
+    "Account Name": "Eel - Smoked",
+    "Amount Num.": 1.85,
+    "Cash": true
+  },
+  {
+    "Date": "18/04/2019",
+    "id": 97,
+    "Account Name": "Sugar - Sweet N Low, Individual",
+    "Amount Num.": 6.08,
+    "Cash": false
+  },
+  {
+    "Date": "10/06/2019",
+    "id": 98,
+    "Account Name": "Miso - Soy Bean Paste",
+    "Amount Num.": 45.37,
+    "Cash": true
+  },
+  {
+    "Date": "08/11/2019",
+    "id": 99,
+    "Account Name": "Wine - Prosecco Valdobiaddene",
+    "Amount Num.": 7.87,
+    "Cash": false
+  },
+  {
+    "Date": "15/12/2019",
+    "id": 100,
+    "Account Name": "Mix - Cocktail Strawberry Daiquiri",
+    "Amount Num.": 48.4,
+    "Cash": true
+  },
+  {
+    "Date": "16/12/2019",
+    "id": 101,
+    "Account Name": "Pork - Tenderloin, Fresh",
+    "Amount Num.": 40.22,
+    "Cash": true
+  },
+  {
+    "Date": "19/07/2019",
+    "id": 102,
+    "Account Name": "Roe - Flying Fish",
+    "Amount Num.": 14.32,
+    "Cash": false
+  },
+  {
+    "Date": "16/01/2019",
+    "id": 103,
+    "Account Name": "Trout - Rainbow, Fresh",
+    "Amount Num.": 46.41,
+    "Cash": true
+  },
+  {
+    "Date": "11/03/2019",
+    "id": 104,
+    "Account Name": "Beef - Bones, Cut - Up",
+    "Amount Num.": 5.43,
+    "Cash": true
+  },
+  {
+    "Date": "29/07/2019",
+    "id": 105,
+    "Account Name": "Pork - Tenderloin, Fresh",
+    "Amount Num.": 39.77,
+    "Cash": true
+  },
+  {
+    "Date": "21/06/2019",
+    "id": 106,
+    "Account Name": "Icecream - Dibs",
+    "Amount Num.": 23.29,
+    "Cash": false
+  },
+  {
+    "Date": "07/03/2019",
+    "id": 107,
+    "Account Name": "Bread - Assorted Rolls",
+    "Amount Num.": 9.59,
+    "Cash": false
+  },
+  {
+    "Date": "31/07/2019",
+    "id": 108,
+    "Account Name": "Juice - Apple Cider",
+    "Amount Num.": 19.47,
+    "Cash": true
+  },
+  {
+    "Date": "15/07/2019",
+    "id": 109,
+    "Account Name": "Pernod",
+    "Amount Num.": 38.39,
+    "Cash": true
+  },
+  {
+    "Date": "05/09/2019",
+    "id": 110,
+    "Account Name": "Sobe - Green Tea",
+    "Amount Num.": 49.78,
+    "Cash": true
+  },
+  {
+    "Date": "16/05/2019",
+    "id": 111,
+    "Account Name": "Cake - French Pear Tart",
+    "Amount Num.": 31.05,
+    "Cash": false
+  },
+  {
+    "Date": "15/08/2019",
+    "id": 112,
+    "Account Name": "Cheese - Havarti, Roasted Garlic",
+    "Amount Num.": 28.46,
+    "Cash": true
+  },
+  {
+    "Date": "07/08/2019",
+    "id": 113,
+    "Account Name": "Carrots - Purple, Organic",
+    "Amount Num.": 6.97,
+    "Cash": false
+  },
+  {
+    "Date": "03/11/2019",
+    "id": 114,
+    "Account Name": "Heavy Duty Dust Pan",
+    "Amount Num.": 31.5,
+    "Cash": false
+  },
+  {
+    "Date": "05/08/2019",
+    "id": 115,
+    "Account Name": "Everfresh Products",
+    "Amount Num.": 43.42,
+    "Cash": false
+  },
+  {
+    "Date": "30/09/2019",
+    "id": 116,
+    "Account Name": "Fish - Atlantic Salmon, Cold",
+    "Amount Num.": 48.29,
+    "Cash": true
+  },
+  {
+    "Date": "05/08/2019",
+    "id": 117,
+    "Account Name": "Pepper - Black, Whole",
+    "Amount Num.": 17.65,
+    "Cash": true
+  },
+  {
+    "Date": "09/05/2019",
+    "id": 118,
+    "Account Name": "Milk - Homo",
+    "Amount Num.": 17.17,
+    "Cash": true
+  },
+  {
+    "Date": "11/04/2019",
+    "id": 119,
+    "Account Name": "Pastry - Raisin Muffin - Mini",
+    "Amount Num.": 13.23,
+    "Cash": false
+  },
+  {
+    "Date": "13/11/2019",
+    "id": 120,
+    "Account Name": "Beer - Sleemans Honey Brown",
+    "Amount Num.": 15.3,
+    "Cash": true
+  },
+  {
+    "Date": "25/02/2019",
+    "id": 121,
+    "Account Name": "Kirsch - Schloss",
+    "Amount Num.": 22.79,
+    "Cash": false
+  },
+  {
+    "Date": "10/05/2019",
+    "id": 122,
+    "Account Name": "Wine - Ej Gallo Sierra Valley",
+    "Amount Num.": 43.24,
+    "Cash": false
+  },
+  {
+    "Date": "22/05/2019",
+    "id": 123,
+    "Account Name": "Cookie Double Choco",
+    "Amount Num.": 49.61,
+    "Cash": true
+  },
+  {
+    "Date": "17/03/2019",
+    "id": 124,
+    "Account Name": "Bread - Olive Dinner Roll",
+    "Amount Num.": 19.37,
+    "Cash": false
+  },
+  {
+    "Date": "09/07/2019",
+    "id": 125,
+    "Account Name": "Pasta - Tortellini, Fresh",
+    "Amount Num.": 10.68,
+    "Cash": true
+  },
+  {
+    "Date": "09/12/2019",
+    "id": 126,
+    "Account Name": "Sole - Fillet",
+    "Amount Num.": 23.4,
+    "Cash": false
+  },
+  {
+    "Date": "30/10/2019",
+    "id": 127,
+    "Account Name": "Pineapple - Canned, Rings",
+    "Amount Num.": 34.91,
+    "Cash": true
+  },
+  {
+    "Date": "16/02/2019",
+    "id": 128,
+    "Account Name": "Extract - Vanilla,artificial",
+    "Amount Num.": 31.28,
+    "Cash": true
+  },
+  {
+    "Date": "13/02/2019",
+    "id": 129,
+    "Account Name": "Peppercorns - Pink",
+    "Amount Num.": 48.5,
+    "Cash": false
+  },
+  {
+    "Date": "21/07/2019",
+    "id": 130,
+    "Account Name": "Wine - Trimbach Pinot Blanc",
+    "Amount Num.": 6.97,
+    "Cash": true
+  },
+  {
+    "Date": "25/08/2019",
+    "id": 131,
+    "Account Name": "Cheese - Augre Des Champs",
+    "Amount Num.": 10.51,
+    "Cash": true
+  },
+  {
+    "Date": "29/11/2019",
+    "id": 132,
+    "Account Name": "Tea - Apple Green Tea",
+    "Amount Num.": 20.86,
+    "Cash": true
+  },
+  {
+    "Date": "26/06/2019",
+    "id": 133,
+    "Account Name": "Liners - Banana, Paper",
+    "Amount Num.": 25.51,
+    "Cash": false
+  },
+  {
+    "Date": "27/02/2019",
+    "id": 134,
+    "Account Name": "Leeks - Baby, White",
+    "Amount Num.": 46.04,
+    "Cash": false
+  },
+  {
+    "Date": "17/03/2019",
+    "id": 135,
+    "Account Name": "Coffee - Almond Amaretto",
+    "Amount Num.": 16.61,
+    "Cash": true
+  },
+  {
+    "Date": "29/06/2019",
+    "id": 136,
+    "Account Name": "Potatoes - Idaho 80 Count",
+    "Amount Num.": 38.96,
+    "Cash": true
+  },
+  {
+    "Date": "28/10/2019",
+    "id": 137,
+    "Account Name": "Pasta - Lasagna Noodle, Frozen",
+    "Amount Num.": 1.63,
+    "Cash": false
+  },
+  {
+    "Date": "27/07/2019",
+    "id": 138,
+    "Account Name": "Soup - Campbells Tomato Ravioli",
+    "Amount Num.": 12.83,
+    "Cash": true
+  },
+  {
+    "Date": "24/02/2019",
+    "id": 139,
+    "Account Name": "Milkettes - 2%",
+    "Amount Num.": 21.72,
+    "Cash": false
+  },
+  {
+    "Date": "29/07/2019",
+    "id": 140,
+    "Account Name": "Sauce - Oyster",
+    "Amount Num.": 33.52,
+    "Cash": true
+  },
+  {
+    "Date": "27/10/2019",
+    "id": 141,
+    "Account Name": "Cherries - Fresh",
+    "Amount Num.": 18.25,
+    "Cash": false
+  },
+  {
+    "Date": "12/02/2019",
+    "id": 142,
+    "Account Name": "Sauce - Gravy, Au Jus, Mix",
+    "Amount Num.": 6.66,
+    "Cash": true
+  },
+  {
+    "Date": "09/05/2019",
+    "id": 143,
+    "Account Name": "Oil - Macadamia",
+    "Amount Num.": 18.93,
+    "Cash": true
+  },
+  {
+    "Date": "14/05/2019",
+    "id": 144,
+    "Account Name": "Napkin - Cocktail,beige 2 - Ply",
+    "Amount Num.": 7.73,
+    "Cash": false
+  },
+  {
+    "Date": "05/08/2019",
+    "id": 145,
+    "Account Name": "Initation Crab Meat",
+    "Amount Num.": 10.87,
+    "Cash": false
+  },
+  {
+    "Date": "30/07/2019",
+    "id": 146,
+    "Account Name": "Hog / Sausage Casing - Pork",
+    "Amount Num.": 18.97,
+    "Cash": false
+  },
+  {
+    "Date": "09/08/2019",
+    "id": 147,
+    "Account Name": "Soup - Beef Conomme, Dry",
+    "Amount Num.": 49.92,
+    "Cash": false
+  },
+  {
+    "Date": "04/03/2019",
+    "id": 148,
+    "Account Name": "Gatorade - Cool Blue Raspberry",
+    "Amount Num.": 7.99,
+    "Cash": false
+  },
+  {
+    "Date": "15/03/2019",
+    "id": 149,
+    "Account Name": "Rabbit - Whole",
+    "Amount Num.": 18.13,
+    "Cash": true
+  },
+  {
+    "Date": "29/07/2019",
+    "id": 150,
+    "Account Name": "Gherkin",
+    "Amount Num.": 24.61,
+    "Cash": false
+  },
+  {
+    "Date": "14/01/2019",
+    "id": 151,
+    "Account Name": "Pasta - Agnolotti - Butternut",
+    "Amount Num.": 15.44,
+    "Cash": true
+  },
+  {
+    "Date": "28/05/2019",
+    "id": 152,
+    "Account Name": "Nut - Chestnuts, Whole",
+    "Amount Num.": 0.36,
+    "Cash": true
+  },
+  {
+    "Date": "25/02/2019",
+    "id": 153,
+    "Account Name": "Cheese - Cream Cheese",
+    "Amount Num.": 31.54,
+    "Cash": true
+  },
+  {
+    "Date": "16/05/2019",
+    "id": 154,
+    "Account Name": "Dawn Professionl Pot And Pan",
+    "Amount Num.": 20.22,
+    "Cash": false
+  },
+  {
+    "Date": "29/11/2019",
+    "id": 155,
+    "Account Name": "Appetizer - Shrimp Puff",
+    "Amount Num.": 43.42,
+    "Cash": true
+  },
+  {
+    "Date": "14/05/2019",
+    "id": 156,
+    "Account Name": "Wine - Chardonnay South",
+    "Amount Num.": 10.63,
+    "Cash": false
+  },
+  {
+    "Date": "28/07/2019",
+    "id": 157,
+    "Account Name": "Bread - Flat Bread",
+    "Amount Num.": 5.84,
+    "Cash": true
+  },
+  {
+    "Date": "16/08/2019",
+    "id": 158,
+    "Account Name": "Wine - Gato Negro Cabernet",
+    "Amount Num.": 49.24,
+    "Cash": true
+  },
+  {
+    "Date": "27/03/2019",
+    "id": 159,
+    "Account Name": "Soap - Hand Soap",
+    "Amount Num.": 46.43,
+    "Cash": true
+  },
+  {
+    "Date": "19/03/2019",
+    "id": 160,
+    "Account Name": "Island Oasis - Banana Daiquiri",
+    "Amount Num.": 25.78,
+    "Cash": true
+  },
+  {
+    "Date": "16/01/2019",
+    "id": 161,
+    "Account Name": "Muffin Carrot - Individual",
+    "Amount Num.": 13.05,
+    "Cash": true
+  },
+  {
+    "Date": "05/12/2019",
+    "id": 162,
+    "Account Name": "Bagel - Everything",
+    "Amount Num.": 36.51,
+    "Cash": true
+  },
+  {
+    "Date": "26/08/2019",
+    "id": 163,
+    "Account Name": "Wine - Alsace Gewurztraminer",
+    "Amount Num.": 5.82,
+    "Cash": false
+  },
+  {
+    "Date": "18/12/2019",
+    "id": 164,
+    "Account Name": "Nut - Hazelnut, Ground, Natural",
+    "Amount Num.": 12.1,
+    "Cash": true
+  },
+  {
+    "Date": "31/07/2019",
+    "id": 165,
+    "Account Name": "Beef - Texas Style Burger",
+    "Amount Num.": 23.97,
+    "Cash": true
+  },
+  {
+    "Date": "21/09/2019",
+    "id": 166,
+    "Account Name": "Chocolate - Milk",
+    "Amount Num.": 46.89,
+    "Cash": false
+  },
+  {
+    "Date": "29/08/2019",
+    "id": 167,
+    "Account Name": "Steampan - Lid For Half Size",
+    "Amount Num.": 0.35,
+    "Cash": true
+  },
+  {
+    "Date": "18/07/2019",
+    "id": 168,
+    "Account Name": "Apricots - Halves",
+    "Amount Num.": 40.04,
+    "Cash": true
+  },
+  {
+    "Date": "09/08/2019",
+    "id": 169,
+    "Account Name": "Spice - Montreal Steak Spice",
+    "Amount Num.": 40.68,
+    "Cash": false
+  },
+  {
+    "Date": "31/01/2019",
+    "id": 170,
+    "Account Name": "Spinach - Frozen",
+    "Amount Num.": 14.84,
+    "Cash": true
+  },
+  {
+    "Date": "11/05/2019",
+    "id": 171,
+    "Account Name": "Lid - 0090 Clear",
+    "Amount Num.": 15.21,
+    "Cash": false
+  },
+  {
+    "Date": "08/04/2019",
+    "id": 172,
+    "Account Name": "Bread - Pumpernickle, Rounds",
+    "Amount Num.": 30.02,
+    "Cash": false
+  },
+  {
+    "Date": "24/09/2019",
+    "id": 173,
+    "Account Name": "Gin - Gilbeys London, Dry",
+    "Amount Num.": 17.92,
+    "Cash": false
+  },
+  {
+    "Date": "22/03/2019",
+    "id": 174,
+    "Account Name": "Chef Hat 20cm",
+    "Amount Num.": 16.82,
+    "Cash": false
+  },
+  {
+    "Date": "03/10/2019",
+    "id": 175,
+    "Account Name": "Coriander - Ground",
+    "Amount Num.": 48.14,
+    "Cash": false
+  },
+  {
+    "Date": "14/07/2019",
+    "id": 176,
+    "Account Name": "Cup - 3.5oz, Foam",
+    "Amount Num.": 24.11,
+    "Cash": false
+  },
+  {
+    "Date": "02/02/2019",
+    "id": 177,
+    "Account Name": "Bread - White, Sliced",
+    "Amount Num.": 34.96,
+    "Cash": false
+  },
+  {
+    "Date": "14/06/2019",
+    "id": 178,
+    "Account Name": "Steam Pan - Half Size Deep",
+    "Amount Num.": 3.59,
+    "Cash": false
+  },
+  {
+    "Date": "16/06/2019",
+    "id": 179,
+    "Account Name": "Bananas",
+    "Amount Num.": 7.46,
+    "Cash": false
+  },
+  {
+    "Date": "21/09/2019",
+    "id": 180,
+    "Account Name": "Eggwhite Frozen",
+    "Amount Num.": 17.4,
+    "Cash": true
+  },
+  {
+    "Date": "04/05/2019",
+    "id": 181,
+    "Account Name": "Bread - Raisin",
+    "Amount Num.": 39.41,
+    "Cash": false
+  },
+  {
+    "Date": "01/09/2019",
+    "id": 182,
+    "Account Name": "French Pastries",
+    "Amount Num.": 26.82,
+    "Cash": false
+  },
+  {
+    "Date": "27/04/2019",
+    "id": 183,
+    "Account Name": "Toamtoes 6x7 Select",
+    "Amount Num.": 31.3,
+    "Cash": false
+  },
+  {
+    "Date": "10/01/2019",
+    "id": 184,
+    "Account Name": "Flour - Cake",
+    "Amount Num.": 24.32,
+    "Cash": true
+  },
+  {
+    "Date": "20/08/2019",
+    "id": 185,
+    "Account Name": "Wine - Ruffino Chianti Classico",
+    "Amount Num.": 12.89,
+    "Cash": true
+  },
+  {
+    "Date": "10/06/2019",
+    "id": 186,
+    "Account Name": "Shrimp - Black Tiger 8 - 12",
+    "Amount Num.": 28.58,
+    "Cash": true
+  },
+  {
+    "Date": "24/04/2019",
+    "id": 187,
+    "Account Name": "Ginger - Crystalized",
+    "Amount Num.": 8.6,
+    "Cash": true
+  },
+  {
+    "Date": "24/12/2019",
+    "id": 188,
+    "Account Name": "Radish - Pickled",
+    "Amount Num.": 22.74,
+    "Cash": false
+  },
+  {
+    "Date": "26/01/2019",
+    "id": 189,
+    "Account Name": "Coffee - Decaffeinato Coffee",
+    "Amount Num.": 36.05,
+    "Cash": false
+  },
+  {
+    "Date": "18/08/2019",
+    "id": 190,
+    "Account Name": "Gelatine Powder",
+    "Amount Num.": 10.94,
+    "Cash": true
+  },
+  {
+    "Date": "07/02/2019",
+    "id": 191,
+    "Account Name": "Chicken - Leg / Back Attach",
+    "Amount Num.": 24.46,
+    "Cash": false
+  },
+  {
+    "Date": "04/02/2019",
+    "id": 192,
+    "Account Name": "Veal - Knuckle",
+    "Amount Num.": 14.84,
+    "Cash": false
+  },
+  {
+    "Date": "09/11/2019",
+    "id": 193,
+    "Account Name": "Pears - Anjou",
+    "Amount Num.": 2.29,
+    "Cash": true
+  },
+  {
+    "Date": "21/09/2019",
+    "id": 194,
+    "Account Name": "Beef - Short Loin",
+    "Amount Num.": 44.65,
+    "Cash": false
+  },
+  {
+    "Date": "01/09/2019",
+    "id": 195,
+    "Account Name": "Sauce - Demi Glace",
+    "Amount Num.": 22.33,
+    "Cash": true
+  },
+  {
+    "Date": "04/02/2019",
+    "id": 196,
+    "Account Name": "Asparagus - White, Fresh",
+    "Amount Num.": 45.14,
+    "Cash": true
+  },
+  {
+    "Date": "21/01/2019",
+    "id": 197,
+    "Account Name": "Gloves - Goldtouch Disposable",
+    "Amount Num.": 16.87,
+    "Cash": true
+  },
+  {
+    "Date": "03/11/2019",
+    "id": 198,
+    "Account Name": "Remy Red",
+    "Amount Num.": 31.04,
+    "Cash": true
+  },
+  {
+    "Date": "04/09/2019",
+    "id": 199,
+    "Account Name": "Table Cloth 90x90 White",
+    "Amount Num.": 35.7,
+    "Cash": true
+  },
+  {
+    "Date": "22/05/2019",
+    "id": 200,
+    "Account Name": "Fib N9 - Prague Powder",
+    "Amount Num.": 12.82,
+    "Cash": true
+  },
+  {
+    "Date": "04/11/2019",
+    "id": 201,
+    "Account Name": "Lettuce - Boston Bib",
+    "Amount Num.": 35.63,
+    "Cash": false
+  },
+  {
+    "Date": "14/03/2019",
+    "id": 202,
+    "Account Name": "Onions - Dried, Chopped",
+    "Amount Num.": 42.11,
+    "Cash": true
+  },
+  {
+    "Date": "27/09/2019",
+    "id": 203,
+    "Account Name": "Fuji Apples",
+    "Amount Num.": 12.84,
+    "Cash": true
+  },
+  {
+    "Date": "24/02/2019",
+    "id": 204,
+    "Account Name": "Parsley - Dried",
+    "Amount Num.": 4.55,
+    "Cash": true
+  },
+  {
+    "Date": "29/03/2019",
+    "id": 205,
+    "Account Name": "Paper Cocktail Umberlla 80 - 180",
+    "Amount Num.": 37.54,
+    "Cash": false
+  },
+  {
+    "Date": "15/06/2019",
+    "id": 206,
+    "Account Name": "Horseradish Root",
+    "Amount Num.": 49.88,
+    "Cash": true
+  },
+  {
+    "Date": "17/07/2019",
+    "id": 207,
+    "Account Name": "Tomatoes - Vine Ripe, Yellow",
+    "Amount Num.": 24.1,
+    "Cash": true
+  },
+  {
+    "Date": "21/06/2019",
+    "id": 208,
+    "Account Name": "Dome Lid Clear P92008h",
+    "Amount Num.": 20.86,
+    "Cash": true
+  },
+  {
+    "Date": "02/09/2019",
+    "id": 209,
+    "Account Name": "Pork - Backfat",
+    "Amount Num.": 21.94,
+    "Cash": false
+  },
+  {
+    "Date": "01/02/2019",
+    "id": 210,
+    "Account Name": "Sponge Cake Mix - Chocolate",
+    "Amount Num.": 33.59,
+    "Cash": false
+  },
+  {
+    "Date": "23/08/2019",
+    "id": 211,
+    "Account Name": "Tobasco Sauce",
+    "Amount Num.": 45.95,
+    "Cash": false
+  },
+  {
+    "Date": "19/12/2019",
+    "id": 212,
+    "Account Name": "Cheese - St. Andre",
+    "Amount Num.": 24.11,
+    "Cash": true
+  },
+  {
+    "Date": "23/09/2019",
+    "id": 213,
+    "Account Name": "Pepper - Orange",
+    "Amount Num.": 40.46,
+    "Cash": false
+  },
+  {
+    "Date": "06/04/2019",
+    "id": 214,
+    "Account Name": "Soup - Campbells",
+    "Amount Num.": 32.23,
+    "Cash": false
+  },
+  {
+    "Date": "22/11/2019",
+    "id": 215,
+    "Account Name": "Gelatine Leaves - Bulk",
+    "Amount Num.": 32.15,
+    "Cash": false
+  },
+  {
+    "Date": "30/07/2019",
+    "id": 216,
+    "Account Name": "Yoplait - Strawbrasp Peac",
+    "Amount Num.": 19.5,
+    "Cash": true
+  },
+  {
+    "Date": "16/12/2019",
+    "id": 217,
+    "Account Name": "Cheese - Bakers Cream Cheese",
+    "Amount Num.": 47.69,
+    "Cash": false
+  },
+  {
+    "Date": "28/04/2019",
+    "id": 218,
+    "Account Name": "Rice - Sushi",
+    "Amount Num.": 1.83,
+    "Cash": false
+  },
+  {
+    "Date": "02/02/2019",
+    "id": 219,
+    "Account Name": "Beef - Flank Steak",
+    "Amount Num.": 25.86,
+    "Cash": false
+  },
+  {
+    "Date": "04/03/2019",
+    "id": 220,
+    "Account Name": "Syrup - Monin - Granny Smith",
+    "Amount Num.": 12.42,
+    "Cash": false
+  },
+  {
+    "Date": "03/12/2019",
+    "id": 221,
+    "Account Name": "Beets - Pickled",
+    "Amount Num.": 24.77,
+    "Cash": false
+  },
+  {
+    "Date": "12/02/2019",
+    "id": 222,
+    "Account Name": "Flour - Whole Wheat",
+    "Amount Num.": 12.97,
+    "Cash": true
+  },
+  {
+    "Date": "21/02/2019",
+    "id": 223,
+    "Account Name": "Shrimp - 150 - 250",
+    "Amount Num.": 1.56,
+    "Cash": false
+  },
+  {
+    "Date": "08/02/2019",
+    "id": 224,
+    "Account Name": "Sprouts - China Rose",
+    "Amount Num.": 45.5,
+    "Cash": true
+  },
+  {
+    "Date": "14/10/2019",
+    "id": 225,
+    "Account Name": "Lemon Grass",
+    "Amount Num.": 9.01,
+    "Cash": true
+  },
+  {
+    "Date": "02/10/2019",
+    "id": 226,
+    "Account Name": "Galliano",
+    "Amount Num.": 39.75,
+    "Cash": true
+  },
+  {
+    "Date": "08/11/2019",
+    "id": 227,
+    "Account Name": "Wine - Pinot Noir Pond Haddock",
+    "Amount Num.": 36.95,
+    "Cash": false
+  },
+  {
+    "Date": "01/08/2019",
+    "id": 228,
+    "Account Name": "Chicken - Thigh, Bone In",
+    "Amount Num.": 6.65,
+    "Cash": false
+  },
+  {
+    "Date": "28/11/2019",
+    "id": 229,
+    "Account Name": "Snails - Large Canned",
+    "Amount Num.": 4.58,
+    "Cash": false
+  },
+  {
+    "Date": "23/12/2019",
+    "id": 230,
+    "Account Name": "Coffee - Ristretto Coffee Capsule",
+    "Amount Num.": 44.28,
+    "Cash": true
+  },
+  {
+    "Date": "06/01/2019",
+    "id": 231,
+    "Account Name": "Marzipan 50/50",
+    "Amount Num.": 0.22,
+    "Cash": true
+  },
+  {
+    "Date": "12/10/2019",
+    "id": 232,
+    "Account Name": "Pork - Back Ribs",
+    "Amount Num.": 28.98,
+    "Cash": true
+  },
+  {
+    "Date": "13/09/2019",
+    "id": 233,
+    "Account Name": "Mustard - Dry, Powder",
+    "Amount Num.": 23.7,
+    "Cash": false
+  },
+  {
+    "Date": "21/06/2019",
+    "id": 234,
+    "Account Name": "Pails With Lids",
+    "Amount Num.": 3,
+    "Cash": true
+  },
+  {
+    "Date": "22/02/2019",
+    "id": 235,
+    "Account Name": "Bagel - 12 Grain Preslice",
+    "Amount Num.": 26.43,
+    "Cash": true
+  },
+  {
+    "Date": "08/09/2019",
+    "id": 236,
+    "Account Name": "Beer - Creemore",
+    "Amount Num.": 47.08,
+    "Cash": true
+  },
+  {
+    "Date": "05/04/2019",
+    "id": 237,
+    "Account Name": "Wine - Two Oceans Cabernet",
+    "Amount Num.": 9.47,
+    "Cash": true
+  },
+  {
+    "Date": "27/11/2019",
+    "id": 238,
+    "Account Name": "Cheese - Camembert",
+    "Amount Num.": 1.6,
+    "Cash": false
+  },
+  {
+    "Date": "26/10/2019",
+    "id": 239,
+    "Account Name": "Cornflakes",
+    "Amount Num.": 2.16,
+    "Cash": false
+  },
+  {
+    "Date": "10/07/2019",
+    "id": 240,
+    "Account Name": "Steampan - Half Size Shallow",
+    "Amount Num.": 37.91,
+    "Cash": false
+  },
+  {
+    "Date": "11/12/2019",
+    "id": 241,
+    "Account Name": "The Pop Shoppe - Grape",
+    "Amount Num.": 13.67,
+    "Cash": true
+  },
+  {
+    "Date": "28/04/2019",
+    "id": 242,
+    "Account Name": "Chicken - Base, Ultimate",
+    "Amount Num.": 22.76,
+    "Cash": false
+  },
+  {
+    "Date": "24/05/2019",
+    "id": 243,
+    "Account Name": "Wine - Fume Blanc Fetzer",
+    "Amount Num.": 6.9,
+    "Cash": true
+  },
+  {
+    "Date": "08/01/2019",
+    "id": 244,
+    "Account Name": "Island Oasis - Sweet And Sour Mix",
+    "Amount Num.": 43.26,
+    "Cash": true
+  },
+  {
+    "Date": "06/02/2019",
+    "id": 245,
+    "Account Name": "Nut - Hazelnut, Ground, Natural",
+    "Amount Num.": 15.43,
+    "Cash": true
+  },
+  {
+    "Date": "25/11/2019",
+    "id": 246,
+    "Account Name": "Cheese - Augre Des Champs",
+    "Amount Num.": 16.3,
+    "Cash": true
+  },
+  {
+    "Date": "13/11/2019",
+    "id": 247,
+    "Account Name": "Cumin - Ground",
+    "Amount Num.": 24.56,
+    "Cash": true
+  },
+  {
+    "Date": "18/03/2019",
+    "id": 248,
+    "Account Name": "Pasta - Ravioli",
+    "Amount Num.": 24.05,
+    "Cash": true
+  },
+  {
+    "Date": "04/01/2019",
+    "id": 249,
+    "Account Name": "Wine - Red, Mosaic Zweigelt",
+    "Amount Num.": 45.33,
+    "Cash": false
+  },
+  {
+    "Date": "20/03/2019",
+    "id": 250,
+    "Account Name": "Orange Roughy 6/8 Oz",
+    "Amount Num.": 21.59,
+    "Cash": false
+  },
+  {
+    "Date": "14/09/2019",
+    "id": 251,
+    "Account Name": "Carbonated Water - White Grape",
+    "Amount Num.": 5.57,
+    "Cash": true
+  },
+  {
+    "Date": "23/09/2019",
+    "id": 252,
+    "Account Name": "Pastry - French Mini Assorted",
+    "Amount Num.": 2.66,
+    "Cash": true
+  },
+  {
+    "Date": "03/03/2019",
+    "id": 253,
+    "Account Name": "Danishes - Mini Cheese",
+    "Amount Num.": 31.37,
+    "Cash": true
+  },
+  {
+    "Date": "19/07/2019",
+    "id": 254,
+    "Account Name": "Stock - Chicken, White",
+    "Amount Num.": 35.06,
+    "Cash": true
+  },
+  {
+    "Date": "16/09/2019",
+    "id": 255,
+    "Account Name": "Beef - Baby, Liver",
+    "Amount Num.": 10.36,
+    "Cash": true
+  },
+  {
+    "Date": "10/09/2019",
+    "id": 256,
+    "Account Name": "Almonds Ground Blanched",
+    "Amount Num.": 23.95,
+    "Cash": false
+  },
+  {
+    "Date": "10/03/2019",
+    "id": 257,
+    "Account Name": "Crab - Dungeness, Whole, live",
+    "Amount Num.": 7.07,
+    "Cash": false
+  },
+  {
+    "Date": "09/01/2019",
+    "id": 258,
+    "Account Name": "Potatoes - Yukon Gold 5 Oz",
+    "Amount Num.": 17.24,
+    "Cash": false
+  },
+  {
+    "Date": "02/01/2019",
+    "id": 259,
+    "Account Name": "Olives - Kalamata",
+    "Amount Num.": 43.81,
+    "Cash": false
+  },
+  {
+    "Date": "09/02/2019",
+    "id": 260,
+    "Account Name": "Cheese - Le Cru Du Clocher",
+    "Amount Num.": 46.3,
+    "Cash": false
+  },
+  {
+    "Date": "20/04/2019",
+    "id": 261,
+    "Account Name": "Veal - Liver",
+    "Amount Num.": 11.7,
+    "Cash": true
+  },
+  {
+    "Date": "12/12/2019",
+    "id": 262,
+    "Account Name": "Water Chestnut - Canned",
+    "Amount Num.": 14.21,
+    "Cash": false
+  },
+  {
+    "Date": "01/01/2019",
+    "id": 263,
+    "Account Name": "Hagen Daza - Dk Choocolate",
+    "Amount Num.": 33.19,
+    "Cash": true
+  },
+  {
+    "Date": "25/07/2019",
+    "id": 264,
+    "Account Name": "Bread - Crumbs, Bulk",
+    "Amount Num.": 6.93,
+    "Cash": false
+  },
+  {
+    "Date": "26/08/2019",
+    "id": 265,
+    "Account Name": "Wine - Red, Metus Rose",
+    "Amount Num.": 6.72,
+    "Cash": false
+  }
+])
