@@ -1,17 +1,3 @@
-$(document).ready(function(){
-    $('#table').DataTable( {
-        fixedHeader: true,
-        responsive: true,
-        "iDisplayLength": 5,
-        "aLengthMenu": [[5, 10, 15, -1], [5, 10, 15, "All"]],
-        "order": [],
-        "columnDefs": [ {
-        "targets"  : 'no-sort',
-        "orderable": false,
-        }]
-   });
-});
-
 // Source: https://weeknumber.net/how-to/javascript
 // Returns the ISO week of the date.
 Date.prototype.getWeek = function () {
@@ -329,3 +315,18 @@ d3.json("/data", function (data) {
 
     dc.renderAll();
 });
+
+$(document).ready(function(){
+    $('#table').DataTable( {
+        fixedHeader: true,
+        responsive: true,
+        "iDisplayLength": 5,
+        "aLengthMenu": [[5, 10, 15, -1], [5, 10, 15, "All"]],
+        "order": [],
+        "columnDefs": [ {
+        "targets"  : 'no-sort',
+        "orderable": false,
+        }]
+   });
+});
+
