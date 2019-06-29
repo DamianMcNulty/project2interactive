@@ -20,7 +20,7 @@ mongo = PyMongo(app)
 
 @app.route('/data')
 def data():
-    return dumps(list(mongo.db.goceries.find()))
+    return dumps(list(mongo.db.groceries.find()))
 
 @app.route('/')
 def index():
