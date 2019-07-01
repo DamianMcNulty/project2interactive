@@ -154,7 +154,8 @@ d3.json("/data", function (data) {
         .margins({ top: 10, right: 5, bottom: 50, left: 35 })
         .dimension(name_dim)
         .group(total_per_account)
-        .transitionDuration(1000)
+        .transitionDuration(2000)
+        .elasticX(true)
         .x(d3.scale.ordinal())
         .colorAccessor(function (d) { return d.key; })
         .valueAccessor(function (p) {
@@ -184,6 +185,7 @@ d3.json("/data", function (data) {
         .margins({ top: 10, right: 5, bottom: 50, left: 35 })
         .dimension(date_dim)
         .group(total_expense_per_day)
+        .elasticX(true)
         .x(d3.time.scale().domain([new Date(2019, 0, 1), new Date(2019, 11, 31)]).range([0, w]))
         .xAxisLabel("Date")
         .brushOn(false)
