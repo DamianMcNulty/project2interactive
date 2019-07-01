@@ -14,6 +14,16 @@ var data1 = [];
 
 var pie = dc.pieChart("#piechart");
 
+function remove_empty_bins(source_group) {
+    return {
+        all:function () {
+            return source_group.all().filter(function(d) {
+                return d.value != 0;
+            });
+        }
+    };
+}
+
 d3.json("/data", function (data) {
     function print_filter(filter) {
         var f = eval(filter);
@@ -127,7 +137,7 @@ d3.json("/data", function (data) {
 
     // *****************************************************************************
     var name_dim = ndx.dimension(dc.pluck('name'));
-
+    
     var total_per_account = name_dim.group().reduce(
         function (p, v) {
             ++p.count;
@@ -147,13 +157,14 @@ d3.json("/data", function (data) {
         }
     );
     // print_filter('total_per_account');
-
+    var filtered_group = remove_empty_bins(total_per_account);
     dc.barChart('#per-account-chart')
         .width(w)
         .height(h)
         .margins({ top: 10, right: 5, bottom: 50, left: 35 })
         .dimension(name_dim)
-        .group(total_per_account)
+        // .group(total_per_account)
+        .group(filtered_group)
         .transitionDuration(2000)
         .elasticX(true)
         .x(d3.scale.ordinal())
@@ -178,15 +189,19 @@ d3.json("/data", function (data) {
 
     var date_dim = ndx.dimension(dc.pluck('date'));
     var total_expense_per_day = date_dim.group().reduceSum(dc.pluck('amount'));
-
+    var minDate2 = date_dim.bottom(1)[0].date;
+    var maxDate2 = date_dim.top(1)[0].date;
     dc.lineChart('#by-date-day-line')
         .width(w)
         .height(h)
         .margins({ top: 10, right: 5, bottom: 50, left: 35 })
         .dimension(date_dim)
+        .transitionDuration(2000)
         .group(total_expense_per_day)
         .elasticX(true)
-        .x(d3.time.scale().domain([new Date(2019, 0, 1), new Date(2019, 11, 31)]).range([0, w]))
+        // .x(d3.time.scale().domain([new Date(2019, 0, 1), new Date(2019, 11, 31)]).range([0, w]))
+        .x(d3.time.scale().domain([minDate2,maxDate2]).range([0, w]))
+        // .x(d3.time.scale().domain([minDate2,maxDate2]))
         .xAxisLabel("Date")
         .brushOn(false)
         .yAxisLabel("Amount (Euros)")
@@ -209,7 +224,7 @@ d3.json("/data", function (data) {
         .radius(w)
         .dimension(payment)
         .group(paymentGroup)
-        .transitionDuration(500)
+        .transitionDuration(2000)
         .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100; })
         .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
         .colors(d3.scale.category20());
@@ -240,7 +255,7 @@ d3.json("/data", function (data) {
         .radius(w)
         .dimension(quarter_dim)
         .group(quarterGroup)
-        .transitionDuration(500)
+        .transitionDuration(2000)
         .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100 + '\nPercentage: ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
         .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
         .colors(d3.scale.category20())
@@ -256,7 +271,7 @@ d3.json("/data", function (data) {
                     .radius(w)
                     .dimension(quarter_dim)
                     .group(quarterGroup)
-                    .transitionDuration(500)
+                    .transitionDuration(2000)
                     .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100 + '\nPercentage: ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
                     .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
                     .colors(d3.scale.category20())
@@ -271,7 +286,7 @@ d3.json("/data", function (data) {
                     .radius(w)
                     .dimension(month_dim)
                     .group(monthGroup)
-                    .transitionDuration(500)
+                    .transitionDuration(2000)
                     .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100 + '\nPercentage: ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
                     .label(function (d) { return Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
                     .colors(d3.scale.category20())
@@ -286,7 +301,7 @@ d3.json("/data", function (data) {
                     .radius(w)
                     .dimension(week_dim)
                     .group(weekGroup)
-                    .transitionDuration(500)
+                    .transitionDuration(2000)
                     .title(function (d) { return 'Wk ' + d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100 + '\nPercentage: ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
                     .label(function (d) { return Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
                     .colors(d3.scale.category20())
@@ -301,7 +316,7 @@ d3.json("/data", function (data) {
                     .radius(w)
                     .dimension(daily_dim)
                     .group(dailyGroup)
-                    .transitionDuration(500)
+                    .transitionDuration(2000)
                     .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100 + '\nPercentage: ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
                     .label(function (d) { return Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
                     .colors(d3.scale.category20())
