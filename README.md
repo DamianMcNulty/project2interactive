@@ -107,6 +107,9 @@
     npm run buildandwatch
     npm run test_open
 
+    python -m venv env
+    pip install -r requirements.txt
+
 ## Cross Browser Testing
 
 [(Back to top)](#table-of-contents)

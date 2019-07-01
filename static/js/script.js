@@ -165,6 +165,7 @@ d3.json("/data", function (data) {
         .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value.total + 0.00001) * 100) / 100 + '\nCount: ' + d.value.count + '\nAverage: \u20ac' + Math.round((d.value.total / d.value.count + 0.00001) * 100) / 100; })
         .xAxisLabel("Account")
         .yAxisLabel("Amount (Euros)")
+        .elasticY(true)
         .yAxis().ticks(5)
         .tickFormat(function (d) {
             return "\u20ac" + d;
@@ -187,6 +188,7 @@ d3.json("/data", function (data) {
         .xAxisLabel("Date")
         .brushOn(false)
         .yAxisLabel("Amount (Euros)")
+        .elasticY(true)
         .yAxis().ticks(5)
         .tickFormat(function (d) {
             return "\u20ac" + d;
@@ -313,10 +315,6 @@ d3.json("/data", function (data) {
 
     // *****************************************************************************
 
-    dc.renderAll();
-});
-
-$(document).ready(function(){
     $('#table').DataTable( {
         fixedHeader: true,
         responsive: true,
@@ -327,6 +325,10 @@ $(document).ready(function(){
         "targets"  : 'no-sort',
         "orderable": false,
         }]
-   });
+    });
+    dc.renderAll();
 });
+
+// $(document).ready(function(){
+// });
 
