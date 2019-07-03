@@ -250,6 +250,7 @@ d3.json("/data", function (data) {
 
 
     var h1 = $(window).height() * 0.65;
+    var w = $(window).width() * 0.7;
 
     pie
         .width(w)
@@ -334,16 +335,16 @@ d3.json("/data", function (data) {
 
     // *****************************************************************************
 
-    $('#table').DataTable( {
-        fixedHeader: true,
-        responsive: true,
-        "iDisplayLength": 5,
-        "aLengthMenu": [[5, 10, 15, -1], [5, 10, 15, "All"]],
-        "order": [],
-        "columnDefs": [ {
-        "targets"  : 'no-sort',
-        "orderable": false,
-        }]
-    });
+    // $('#table').DataTable( {
+    //     fixedHeader: true,
+    //     responsive: true,
+    //     "iDisplayLength": 5,
+    //     "aLengthMenu": [[5, 10, 15, -1], [5, 10, 15, "All"]],
+    //     "order": [],
+    //     "columnDefs": [ {
+    //     "targets"  : 'no-sort',
+    //     "orderable": false,
+    //     }]
+    // });
     dc.renderAll();
 });
