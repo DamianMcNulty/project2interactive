@@ -73,6 +73,7 @@ d3.json("/data", function (data) {
 
     var w = $(window).width() * 0.48;
     var h = $(window).height() * 0.28;
+    var h = $(window).height() * 0.65;
     if ($(window).width() < 450) {
         w = $(window).width();
     }
@@ -250,7 +251,7 @@ d3.json("/data", function (data) {
 
 
     var h1 = $(window).height() * 0.65;
-    var w = $(window).width() * 0.7;
+    // var w = $(window).width() * 0.7;
 
     pie
         .width(w)
