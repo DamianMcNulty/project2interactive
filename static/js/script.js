@@ -18,7 +18,7 @@ function remove_empty_bins(source_group) {
     return {
         all:function () {
             return source_group.all().filter(function(d) {
-                return d.value != 0;
+                return d.value.count != 0;
             });
         }
     };
@@ -163,7 +163,6 @@ d3.json("/data", function (data) {
         .height(h)
         .margins({ top: 10, right: 5, bottom: 50, left: 35 })
         .dimension(name_dim)
-        // .group(total_per_account)
         .group(filtered_group)
         .transitionDuration(2000)
         .elasticX(true)
@@ -190,7 +189,9 @@ d3.json("/data", function (data) {
     var date_dim = ndx.dimension(dc.pluck('date'));
     var total_expense_per_day = date_dim.group().reduceSum(dc.pluck('amount'));
     var minDate2 = date_dim.bottom(1)[0].date;
+    console.log(minDate2);
     var maxDate2 = date_dim.top(1)[0].date;
+    console.log(maxDate2);
     dc.lineChart('#by-date-day-line')
         .width(w)
         .height(h)
@@ -198,9 +199,9 @@ d3.json("/data", function (data) {
         .dimension(date_dim)
         .transitionDuration(2000)
         .group(total_expense_per_day)
-        .elasticX(true)
         // .x(d3.time.scale().domain([new Date(2019, 0, 1), new Date(2019, 11, 31)]).range([0, w]))
         .x(d3.time.scale().domain([minDate2,maxDate2]).range([0, w]))
+        .elasticX(true)
         // .x(d3.time.scale().domain([minDate2,maxDate2]))
         .xAxisLabel("Date")
         .brushOn(false)
@@ -343,6 +344,7 @@ d3.json("/data", function (data) {
         "orderable": false,
         }]
     });
+    // dc.lineChart('#by-date-day-line').rescale();
     dc.renderAll();
 });
 
