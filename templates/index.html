@@ -9,14 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/dc.css')}}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" /> -->
     <link rel="stylesheet" href="{{url_for('static', filename='css/fractures.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
 </head>
 
 <body class="bg-white minh-100">
-
     <div class="container-fluid">
         <header class="h-6 z-1 relative">
             <div id="total-amount-display" class="black font-size-4 pt-1 ttc top-50 left-50 absolute">Expense Amount:
@@ -29,17 +27,8 @@
                     Amount per Account</span>
                     <a id="show" class="btn mx-auto block my-2">Show Data</a>
                 </div>
-                <!-- <div id="by-date-day-line" class="collapse in mb-4 Chart__border">
-                    <a data-toggle="collapse" href="#by-date-day-line" class=" font-size-2 text-center blue mx-auto my-0 w-100 underline block">Expense
-                        Amount per Day</a>
-                </div> -->
-                <!-- <div id="cash-bank" class="collapse in mb-4 Chart__border">
-                    <a data-toggle="collapse" href="#cash-bank" class=" font-size-2 text-center blue mx-auto my-0 underline block mb-4">Payment
-                        Method</a>
-                </div> -->
             </section>
             <section class="col-xs-12 col-sm-6">
-
                 <div id="piechart" class="mb-4">
                     <span
                         class=" font-size-2 text-center mx-auto my-0 block mb-4">Transaction Amount</span>
@@ -65,7 +54,6 @@
     <script src="{{url_for('static', filename='js/libraries/d3.js')}}"></script>
     <script src="{{url_for('static', filename='js/libraries/crossfilter.js')}}"></script>
     <script src="{{url_for('static', filename='js/libraries/dc.js')}}"></script>
-    <!-- <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> -->
     <script src="{{url_for('static', filename='js/script.js')}}"></script>
 
 </body>

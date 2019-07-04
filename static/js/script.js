@@ -157,7 +157,6 @@ d3.json("/data", function (data) {
             };
         }
     );
-    // print_filter('total_per_account');
     var filtered_group = remove_empty_bins(total_per_account);
     dc.barChart('#per-account-chart')
         .width(w)
@@ -187,37 +186,6 @@ d3.json("/data", function (data) {
 
     // *****************************************************************************
 
-    // var date_dim = ndx.dimension(dc.pluck('date'));
-    // var total_expense_per_day = date_dim.group().reduceSum(dc.pluck('amount'));
-    // var minDate2 = date_dim.bottom(1)[0].date;
-    // console.log(minDate2);
-    // var maxDate2 = date_dim.top(1)[0].date;
-    // console.log(maxDate2);
-    // dc.lineChart('#by-date-day-line')
-    //     .width(w)
-    //     .height(h)
-    //     .margins({ top: 10, right: 5, bottom: 50, left: 35 })
-    //     .dimension(date_dim)
-    //     .transitionDuration(2000)
-    //     .group(total_expense_per_day)
-    //     // .x(d3.time.scale().domain([new Date(2019, 0, 1), new Date(2019, 11, 31)]).range([0, w]))
-    //     .rescale()
-    //     .x(d3.time.scale().domain([minDate2,maxDate2]).range([0, w]))
-    //     .elasticX(true)
-    //     // .x(d3.time.scale().domain([minDate2,maxDate2]))
-    //     .xAxisLabel("Date")
-    //     .brushOn(false)
-    //     .yAxisLabel("Amount (Euros)")
-    //     .elasticY(true)
-    //     .yAxis().ticks(5)
-    //     .tickFormat(function (d) {
-    //         return "\u20ac" + d;
-    //     });
-
-    // *****************************************************************************
-
-    // *****************************************************************************
-
     var payment = ndx.dimension(dc.pluck('payment'));
     var paymentGroup = payment.group().reduceSum(dc.pluck('amount'));
 
@@ -238,7 +206,6 @@ d3.json("/data", function (data) {
 
     var quarter_dim = ndx.dimension(dc.pluck('quarter'));
     var quarterGroup = quarter_dim.group().reduceSum(dc.pluck('amount'));
-    // print_filter('quarterGroup');
 
     var month_dim = ndx.dimension(dc.pluck('month'));
     var monthGroup = month_dim.group().reduceSum(dc.pluck('amount'));
@@ -251,7 +218,6 @@ d3.json("/data", function (data) {
 
 
     var h1 = $(window).height() * 0.65;
-    // var w = $(window).width() * 0.7;
 
     pie
         .width(w)
@@ -336,16 +302,5 @@ d3.json("/data", function (data) {
 
     // *****************************************************************************
 
-    // $('#table').DataTable( {
-    //     fixedHeader: true,
-    //     responsive: true,
-    //     "iDisplayLength": 5,
-    //     "aLengthMenu": [[5, 10, 15, -1], [5, 10, 15, "All"]],
-    //     "order": [],
-    //     "columnDefs": [ {
-    //     "targets"  : 'no-sort',
-    //     "orderable": false,
-    //     }]
-    // });
     dc.renderAll();
 });

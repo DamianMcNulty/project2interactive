@@ -36,8 +36,5 @@ else:
 
 if __name__ == '__main__':
     HOST = environ.get('IP')
-    if development:
-        PORT = int(environ.get('C9_PORT'))
-    else:
-        PORT = int(environ.get('PORT'))
+    PORT = int(environ.get('PORT'))
     app.run(HOST, PORT, debug=development)
