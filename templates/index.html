@@ -6,10 +6,11 @@
     <title>Expense Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}" />
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/dc.css')}}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{url_for('static', filename='css/fractures.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
 </head>
@@ -17,21 +18,21 @@
 <body class="bg-white minh-100">
     <div class="container-fluid">
         <header class="h-6 z-1 relative">
-            <div id="total-amount-display" class="black font-size-4 pt-1 ttc top-50 left-50 absolute">Expense Amount:
-            </div>
+            <h1 id="total-amount-display" class="black font-size-4 pt-1 ttc top-50 left-50 absolute">Expense Amount:
+            </h1>
         </header>
         <div class="row">
             <section class="col-xs-12 col-sm-6">
                 <div id="per-account-chart" class="mb-4">
-                    <span class="font-size-2 text-center mx-auto my-0 w-100 block">Total Transaction
-                    Amount per Account</span>
-                    <a id="show" class="btn mx-auto block my-2">Show Data</a>
+                    <h2 class="font-size-2 text-center mx-auto my-0 w-100 block">Total Transaction
+                    Amount per Account</h2>
+                    <h3 id="show" class="btn mx-auto block my-2">Show Data</h3>
                 </div>
             </section>
             <section class="col-xs-12 col-sm-6">
                 <div id="piechart" class="mb-4">
-                    <span
-                        class=" font-size-2 text-center mx-auto my-0 block mb-4">Transaction Amount</span>
+                    <h2
+                        class=" font-size-2 text-center mx-auto my-0 block mb-4">Transaction Amount</h2>
                     <div class="block text-center my-2">
                         <label class="radio-inline"><input id="quarterly" class="pie" type="radio" name="time" checked
                                 value="quarterly">quarterly</label>
