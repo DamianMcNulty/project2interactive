@@ -75,7 +75,7 @@ d3.json("/data", function (data) {
     var h = $(window).height() * 0.28;
     var h = $(window).height() * 0.65;
     if ($(window).width() < 450) {
-        w = $(window).width();
+        w = $(window).width() * 0.9;
     }
     
     data1 = getTransactions(data);
@@ -181,24 +181,6 @@ d3.json("/data", function (data) {
         .tickFormat(function (d) {
             return "\u20ac" + d;
         });
-
-    // *****************************************************************************
-
-    // *****************************************************************************
-
-    var payment = ndx.dimension(dc.pluck('payment'));
-    var paymentGroup = payment.group().reduceSum(dc.pluck('amount'));
-
-    dc.pieChart('#cash-bank')
-        .width(w)
-        .height(h)
-        .radius(w)
-        .dimension(payment)
-        .group(paymentGroup)
-        .transitionDuration(2000)
-        .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100; })
-        .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
-        .colors(d3.scale.category20());
 
     // *****************************************************************************
 
