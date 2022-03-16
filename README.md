@@ -122,7 +122,7 @@ see cbt folder
 
     git push
 
-note: Integration tests are carried out using Cypress and Netlify. A staging server is deployed to <https://project2interactive.netlify.com/> .
+note: Integration tests are carried out using Cypress and Netlify.
 
 ### Cypress Testing CI Recording
 
@@ -137,7 +137,7 @@ note: Integration tests are carried out using Cypress and Netlify. A staging ser
     (in git bash terminal)
     sh ./publish.sh 1.0.0
 
-The production version is hosted at <https://damianmcnulty.github.io/project2interactive>
+The production version is hosted at <https://project2interactive.herokuapp.com/>
 
 ## Research
 
