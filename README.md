@@ -152,7 +152,6 @@ The production version is hosted at <https://project2interactive.herokuapp.com/>
 
 [(Back to top)](#table-of-contents)
 
--   <https://fractures.space/> <a href="https://twitter.com/pyx">Krisztian Puska</a>
 -   <https://www.linkedin.com/learning/dc-js-for-data-science-essential-training> <a href="http://vizdata.co.uk/">Emma Saunders</a>
 -   [ToolBox](https://frontend.github.io/toolbox/)
 
