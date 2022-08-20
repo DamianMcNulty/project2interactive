@@ -126,6 +126,7 @@ d3.json("/data", function (data) {
                 label: "Date",
                 format: function (d) { return new Date(d.date).getDate() + "/" + (+(new Date(d.date).getMonth()) + 1) + "/" + new Date(d.date).getFullYear(); }
             },
+            'number',
             'day',
             'week',
             'month',
