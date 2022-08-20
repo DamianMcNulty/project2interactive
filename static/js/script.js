@@ -211,7 +211,7 @@ d3.json("/data", function (data) {
         .title(function (d) { return d.key + ': \u20ac' + Math.round((d.value + 0.00001) * 100) / 100 + '\nPercentage: ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
         .label(function (d) { return d.key + ': ' + Math.round((d.value / sumTotalExpenses) * 100, 0) + '%'; })
         .colors(d3.scale.category20())
-        .legend(dc.legend().x(0).y(0).itemHeight(12).gap(5));
+        .legend(dc.legend().x(0).y(10).itemHeight(12).gap(5));
 
     function changeEventHandler(event) {
         var key = this.value;
