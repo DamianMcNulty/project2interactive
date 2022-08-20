@@ -32,7 +32,7 @@
 
 [(Back to top)](#table-of-contents)
 
-1.  This project visualises an expense dataset for the year 2019. The data was generated using the website Mockaroo.com. There are 265 transactions with each having a date, id, account name and amount. 
+1.  This project visualises an expense dataset for the year 2019. The data was generated using the website Mockaroo.com. There are **265** transactions with each having a date, id, account name and amount. 
 2.  Daily, weekly, monthly, quarterly pie charts have been prepared using D3, DC and Crossfilter. Total amount by account and amount by day are also presented visually.
 
 ## UX
