@@ -115,7 +115,7 @@ d3.json("/data", function (data) {
 
     var dateDimension = ndx.dimension(dc.pluck('date'));
     var dataTable = dc.dataTable("#table")
-        .width(1150)
+        .width(900)
         .height(300)
         .dimension(dateDimension)
         .group(function (d) { return ""; })
