@@ -1,6 +1,5 @@
 from runserver import app
 import unittest
-import pytest
 
 
 class FlaskTestCase(unittest.TestCase):
