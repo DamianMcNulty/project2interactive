@@ -140,7 +140,6 @@ The production version is hosted at <https://project2interactive.herokuapp.com/>
 2.  <https://www.w3schools.com/bootstrap/bootstrap_collapse.asp>
 3.  <https://codepen.io/DamianMcNulty/pen/BqyZQq>
 4.  <https://github.com/dc-js/dc.js/issues/731#issuecomment-59599016>
-5.  <https://www.cssmatic.com/box-shadow>
 5.  <https://stackoverflow.com/questions/36494956/elasticxtrue-doesnt-work-dc-js>
 
 ## Credits
