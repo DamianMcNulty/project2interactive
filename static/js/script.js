@@ -46,7 +46,6 @@ d3.json("/data", function (data) {
             a.week = +(new Date(a.date).getWeek());
             a.name = data[j]["Account Name"];
             a.amount = +data[j]['Amount Num.'];
-            a.id = +data[j]['id'];
             var payments = ['Cash', 'Bank'];
             if (data[j]['Cash'] == true) {
                 a.payment = 'cash';
