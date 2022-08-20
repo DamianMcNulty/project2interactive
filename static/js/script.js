@@ -37,6 +37,7 @@ d3.json("/data", function (data) {
     function getTransactions(data) {
         for (var j = 0; j < data.length; j++) {
             let a = {};
+            a.number = j+1;
             a.date = d3.time.format("%d/%m/%Y").parse(data[j]['Date']);
             var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
             a.month = months[new Date(a.date).getMonth()];
@@ -122,11 +123,11 @@ d3.json("/data", function (data) {
         .showGroups(false)
         .size(data.length)
         .columns([
+            'number',
             {
                 label: "Date",
                 format: function (d) { return new Date(d.date).getDate() + "/" + (+(new Date(d.date).getMonth()) + 1) + "/" + new Date(d.date).getFullYear(); }
             },
-            'number',
             'day',
             'week',
             'month',
