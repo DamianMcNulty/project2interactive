@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/github/stars/DamianMcNulty/project2interactive.svg?style=social" alt="GitHub stars">
 </a>
 
-[![Build Status](https://travis-ci.org/DamianMcNulty/project2interactive.svg?branch=master)](https://travis-ci.org/DamianMcNulty/project2interactive)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/DamianMcNulty/project2interactive/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/DamianMcNulty/project2interactive/tree/main)
 
 ## Goal
 
@@ -21,8 +21,6 @@
 -   [Local Development](#local-development)
 
 -   [Local Testing](#local-testing)
-
--   [Cross Browser Testing](#cross-browser-testing)
 
 -   [Deploy](#deploy)
 
@@ -90,6 +88,8 @@
 
 14. [csv2json](https://www.csvjson.com/csv2json)
 
+15. [CircleCI](https://circleci.com/)
+
 ## Local Development
 
 [(Back to top)](#table-of-contents)
@@ -110,11 +110,6 @@
     python -m venv env
     pip install -r requirements.txt
 
-## Cross Browser Testing
-
-[(Back to top)](#table-of-contents)
-
-see cbt folder
 
 ## CI
 
