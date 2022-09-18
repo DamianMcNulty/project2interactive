@@ -32,8 +32,10 @@
 
 [(Back to top)](#table-of-contents)
 
-1.  This project visualises an expense dataset for the year 2019. The data was generated using the website Mockaroo.com. There are **265** transactions with each having a date, id, account name and amount. 
-2.  Daily, weekly, monthly, quarterly pie charts have been prepared using D3, DC and Crossfilter. Total amount by account and amount by day are also presented visually.
+1.  This project visualises an expense dataset for the year 2019. 
+2.  The data was generated using the website Mockaroo.com. 
+3.  There are **265** transactions with each having a date, account name and amount. 
+4.  Graphs have been prepared using D3, DC and Crossfilter.
 
 ## UX
 
@@ -72,23 +74,19 @@
 
 6.  [DC](https://dc-js.github.io/dc.js/)
 
-7.  [Cross Browser Testing](https://crossbrowsertesting.com/)
+7.  [Node v10.15.1](https://nodejs.org/)
 
-8.  [Node v10.15.1](https://nodejs.org/)
+8.  [NPM 6.4.1](https://www.npmjs.com/)
 
-9.  [NPM 6.4.1](https://www.npmjs.com/)
+9. [Cypress.io](https://www.cypress.io/)
 
-10. [Cypress.io](https://www.cypress.io/)
+10. [HTML5 Validator](https://validator.w3.org/)
 
-11. [HTML5 Validator](https://validator.w3.org/)
+11. [CSS3 Validator](https://jigsaw.w3.org/css-validator/)
 
-12. [CSS3 Validator](https://jigsaw.w3.org/css-validator/)
+12. [csv2json](https://www.csvjson.com/csv2json)
 
-13. [Online Converter](https://www.onlineconverter.com/mp4-to-gif)
-
-14. [csv2json](https://www.csvjson.com/csv2json)
-
-15. [CircleCI](https://circleci.com/)
+14. [CircleCI](https://circleci.com/)
 
 ## Local Development
 
@@ -136,11 +134,9 @@ The production version is hosted at <https://project2interactive.herokuapp.com/>
 
 ## Research
 
-1.  <https://www.w3schools.com/bootstrap/bootstrap_tabs_pills.asp>
-2.  <https://www.w3schools.com/bootstrap/bootstrap_collapse.asp>
-3.  <https://codepen.io/DamianMcNulty/pen/BqyZQq>
-4.  <https://github.com/dc-js/dc.js/issues/731#issuecomment-59599016>
-5.  <https://stackoverflow.com/questions/36494956/elasticxtrue-doesnt-work-dc-js>
+1.  <https://codepen.io/DamianMcNulty/pen/BqyZQq>
+2.  <https://github.com/dc-js/dc.js/issues/731#issuecomment-59599016>
+3.  <https://stackoverflow.com/questions/36494956/elasticxtrue-doesnt-work-dc-js>
 
 ## Credits
 
