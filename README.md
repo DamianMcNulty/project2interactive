@@ -1,4 +1,4 @@
-# Project2Interactive
+## Project2Interactive
 
 <a href="https://github.com/DamianMcNulty/project2interactive/stargazers">
     <img src="https://img.shields.io/github/stars/DamianMcNulty/project2interactive.svg?style=social" alt="GitHub stars">
