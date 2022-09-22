@@ -22,8 +22,6 @@
 
 -   [Local Testing](#local-testing)
 
--   [Deploy](#deploy)
-
 -   [Credits](#credits)
 
 -   [LICENSE](#license)
