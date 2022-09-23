@@ -106,26 +106,6 @@
     python -m venv env
     pip install -r requirements.txt
 
-
-## CI
-
-[(Back to top)](#table-of-contents)
-
-    git push
-
-note: Integration tests are carried out using Cypress and Netlify.
-
-## Production
-
-[(Back to top)](#table-of-contents)
-
-    git tag -a v1.0.0 -m "version 1.0.0"
-
-    (in git bash terminal)
-    sh ./publish.sh 1.0.0
-
-The production version is hosted at <https://project2interactive.herokuapp.com/>
-
 ## Research
 
 1.  <https://codepen.io/DamianMcNulty/pen/BqyZQq>
