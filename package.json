@@ -28,7 +28,7 @@
   "homepage": "https://github.com/DamianMcNulty/project2interactive#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.11",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.29.1",
     "cssnano": "^5.1.13",
     "cypress": "^10.8.0",
     "del": "^3.0.0",
